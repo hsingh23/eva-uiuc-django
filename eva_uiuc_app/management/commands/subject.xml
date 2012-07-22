@@ -1,0 +1,2031 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns2:subject id="AAS" xmlns:ns2="http://rest.cis.illinois.edu">
+ <parents>
+  <calendarYear href="http://courses.illinois.edu/cisapp/explorer/schedule/2012.xml" id="2012">
+   2012
+  </calendarYear>
+  <term href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall.xml" id="120128">
+   Fall 2012
+  </term>
+ </parents>
+ <label>
+  Asian American Studies
+ </label>
+ <collegeCode>
+  KV
+ </collegeCode>
+ <departmentCode>
+  1404
+ </departmentCode>
+ <unitName>
+  Asian American Studies Program
+ </unitName>
+ <contactName>
+  Lisa Nakamura
+ </contactName>
+ <contactTitle>
+  Director
+ </contactTitle>
+ <addressLine1>
+  Program Office
+ </addressLine1>
+ <addressLine2>
+  1208 West Nevada, Urbana
+ </addressLine2>
+ <phoneNumber>
+  244-9530
+ </phoneNumber>
+ <webSiteURL>
+  www.aasp.uiuc.edu
+ </webSiteURL>
+ <collegeDepartmentDescription>
+  Director: Lisa Nakamura
+Program Office, 1208 West Nevada, Urbana, 244-9530
+www.aasp.uiuc.edu
+ </collegeDepartmentDescription>
+ <cascadingCourses>
+  <cascadingCourse href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/100.xml" id="AAS 100">
+   <parents>
+    <calendarYear href="http://courses.illinois.edu/cisapp/explorer/schedule/2012.xml" id="2012">
+     2012
+    </calendarYear>
+    <term href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall.xml" id="120128">
+     Fall 2012
+    </term>
+    <subject href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS.xml" id="AAS">
+     Asian American Studies
+    </subject>
+   </parents>
+   <label>
+    Intro Asian American Studies
+   </label>
+   <description>
+    Interdisciplinary introduction to the basic concepts and approaches in Asian American Studies. Surveys the various dimensions of Asian American experiences including history, social organization, literature, arts, and politics.
+   </description>
+   <creditHours>
+    3 hours.
+   </creditHours>
+   <sectionDegreeAttributes>
+    UIUC Social Sciences, and US Minority Culture(s) course.
+   </sectionDegreeAttributes>
+   <genEdCategories>
+    <category id="SBS">
+     <description>
+      Social &amp; Behavioral Sciences
+     </description>
+     <ns2:genEdAttributes>
+      <genEdAttribute code="1SS">
+       UIUC Social Sciences
+      </genEdAttribute>
+     </genEdAttributes>
+    </category>
+    <category id="CNW">
+     <description>
+      Cultural Studies: Non-Western/U.S. Minority Culture(s)
+     </description>
+     <ns2:genEdAttributes>
+      <genEdAttribute code="1US">
+       UIUC: US Minority Culture(s)
+      </genEdAttribute>
+     </genEdAttributes>
+    </category>
+   </genEdCategories>
+   <detailedSections>
+    <detailedSection href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/100/41758.xml" id="41758">
+     <parents>
+      <calendarYear href="http://courses.illinois.edu/cisapp/explorer/schedule/2012.xml" id="2012">
+       2012
+      </calendarYear>
+      <term href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall.xml" id="120128">
+       Fall 2012
+      </term>
+      <subject href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS.xml" id="AAS">
+       Asian American Studies
+      </subject>
+      <course href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/100.xml" id="100">
+       Intro Asian American Studies
+      </course>
+     </parents>
+     <sectionNumber>
+      AD1
+     </sectionNumber>
+     <statusCode>
+      A
+     </statusCode>
+     <partOfTerm>
+      1
+     </partOfTerm>
+     <sectionStatusCode>
+      A
+     </sectionStatusCode>
+     <enrollmentStatus>
+      Open
+     </enrollmentStatus>
+     <startDate>
+      2012-08-27-05:00
+     </startDate>
+     <endDate>
+      2012-12-12-06:00
+     </endDate>
+     <meetings>
+      <meeting id="0">
+       <type code="DIS">
+        discussion-recitation
+       </type>
+       <start>
+        10:00 AM
+       </start>
+       <end>
+        10:50 AM
+       </end>
+       <daysOfTheWeek>
+        F
+       </daysOfTheWeek>
+       <instructors/>
+      </meeting>
+     </meetings>
+    </detailedSection>
+    <detailedSection href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/100/47100.xml" id="47100">
+     <parents>
+      <calendarYear href="http://courses.illinois.edu/cisapp/explorer/schedule/2012.xml" id="2012">
+       2012
+      </calendarYear>
+      <term href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall.xml" id="120128">
+       Fall 2012
+      </term>
+      <subject href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS.xml" id="AAS">
+       Asian American Studies
+      </subject>
+      <course href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/100.xml" id="100">
+       Intro Asian American Studies
+      </course>
+     </parents>
+     <sectionNumber>
+      AD2
+     </sectionNumber>
+     <statusCode>
+      A
+     </statusCode>
+     <partOfTerm>
+      1
+     </partOfTerm>
+     <sectionStatusCode>
+      A
+     </sectionStatusCode>
+     <enrollmentStatus>
+      Open
+     </enrollmentStatus>
+     <startDate>
+      2012-08-27-05:00
+     </startDate>
+     <endDate>
+      2012-12-12-06:00
+     </endDate>
+     <meetings>
+      <meeting id="0">
+       <type code="DIS">
+        discussion-recitation
+       </type>
+       <start>
+        11:00 AM
+       </start>
+       <end>
+        11:50 AM
+       </end>
+       <daysOfTheWeek>
+        F
+       </daysOfTheWeek>
+       <instructors/>
+      </meeting>
+     </meetings>
+    </detailedSection>
+    <detailedSection href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/100/47102.xml" id="47102">
+     <parents>
+      <calendarYear href="http://courses.illinois.edu/cisapp/explorer/schedule/2012.xml" id="2012">
+       2012
+      </calendarYear>
+      <term href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall.xml" id="120128">
+       Fall 2012
+      </term>
+      <subject href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS.xml" id="AAS">
+       Asian American Studies
+      </subject>
+      <course href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/100.xml" id="100">
+       Intro Asian American Studies
+      </course>
+     </parents>
+     <sectionNumber>
+      AD3
+     </sectionNumber>
+     <statusCode>
+      A
+     </statusCode>
+     <partOfTerm>
+      1
+     </partOfTerm>
+     <sectionStatusCode>
+      A
+     </sectionStatusCode>
+     <enrollmentStatus>
+      Open
+     </enrollmentStatus>
+     <startDate>
+      2012-08-27-05:00
+     </startDate>
+     <endDate>
+      2012-12-12-06:00
+     </endDate>
+     <meetings>
+      <meeting id="0">
+       <type code="DIS">
+        discussion-recitation
+       </type>
+       <start>
+        10:00 AM
+       </start>
+       <end>
+        10:50 AM
+       </end>
+       <daysOfTheWeek>
+        F
+       </daysOfTheWeek>
+       <instructors/>
+      </meeting>
+     </meetings>
+    </detailedSection>
+    <detailedSection href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/100/51248.xml" id="51248">
+     <parents>
+      <calendarYear href="http://courses.illinois.edu/cisapp/explorer/schedule/2012.xml" id="2012">
+       2012
+      </calendarYear>
+      <term href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall.xml" id="120128">
+       Fall 2012
+      </term>
+      <subject href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS.xml" id="AAS">
+       Asian American Studies
+      </subject>
+      <course href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/100.xml" id="100">
+       Intro Asian American Studies
+      </course>
+     </parents>
+     <sectionNumber>
+      AD4
+     </sectionNumber>
+     <statusCode>
+      A
+     </statusCode>
+     <partOfTerm>
+      1
+     </partOfTerm>
+     <sectionStatusCode>
+      A
+     </sectionStatusCode>
+     <enrollmentStatus>
+      Open
+     </enrollmentStatus>
+     <startDate>
+      2012-08-27-05:00
+     </startDate>
+     <endDate>
+      2012-12-12-06:00
+     </endDate>
+     <meetings>
+      <meeting id="0">
+       <type code="DIS">
+        discussion-recitation
+       </type>
+       <start>
+        11:00 AM
+       </start>
+       <end>
+        11:50 AM
+       </end>
+       <daysOfTheWeek>
+        F
+       </daysOfTheWeek>
+       <instructors/>
+      </meeting>
+     </meetings>
+    </detailedSection>
+    <detailedSection href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/100/51249.xml" id="51249">
+     <parents>
+      <calendarYear href="http://courses.illinois.edu/cisapp/explorer/schedule/2012.xml" id="2012">
+       2012
+      </calendarYear>
+      <term href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall.xml" id="120128">
+       Fall 2012
+      </term>
+      <subject href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS.xml" id="AAS">
+       Asian American Studies
+      </subject>
+      <course href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/100.xml" id="100">
+       Intro Asian American Studies
+      </course>
+     </parents>
+     <sectionNumber>
+      AD5
+     </sectionNumber>
+     <statusCode>
+      A
+     </statusCode>
+     <partOfTerm>
+      1
+     </partOfTerm>
+     <sectionStatusCode>
+      A
+     </sectionStatusCode>
+     <enrollmentStatus>
+      Open
+     </enrollmentStatus>
+     <startDate>
+      2012-08-27-05:00
+     </startDate>
+     <endDate>
+      2012-12-12-06:00
+     </endDate>
+     <meetings>
+      <meeting id="0">
+       <type code="DIS">
+        discussion-recitation
+       </type>
+       <start>
+        01:00 PM
+       </start>
+       <end>
+        01:50 PM
+       </end>
+       <daysOfTheWeek>
+        W
+       </daysOfTheWeek>
+       <roomNumber>
+        1038
+       </roomNumber>
+       <buildingName>
+        Foreign Languages Building
+       </buildingName>
+       <instructors/>
+      </meeting>
+     </meetings>
+    </detailedSection>
+    <detailedSection href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/100/51932.xml" id="51932">
+     <parents>
+      <calendarYear href="http://courses.illinois.edu/cisapp/explorer/schedule/2012.xml" id="2012">
+       2012
+      </calendarYear>
+      <term href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall.xml" id="120128">
+       Fall 2012
+      </term>
+      <subject href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS.xml" id="AAS">
+       Asian American Studies
+      </subject>
+      <course href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/100.xml" id="100">
+       Intro Asian American Studies
+      </course>
+     </parents>
+     <sectionNumber>
+      AD6
+     </sectionNumber>
+     <statusCode>
+      A
+     </statusCode>
+     <partOfTerm>
+      1
+     </partOfTerm>
+     <sectionStatusCode>
+      A
+     </sectionStatusCode>
+     <enrollmentStatus>
+      Open
+     </enrollmentStatus>
+     <startDate>
+      2012-08-27-05:00
+     </startDate>
+     <endDate>
+      2012-12-12-06:00
+     </endDate>
+     <meetings>
+      <meeting id="0">
+       <type code="DIS">
+        discussion-recitation
+       </type>
+       <start>
+        02:00 PM
+       </start>
+       <end>
+        02:50 PM
+       </end>
+       <daysOfTheWeek>
+        W
+       </daysOfTheWeek>
+       <instructors/>
+      </meeting>
+     </meetings>
+    </detailedSection>
+    <detailedSection href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/100/59818.xml" id="59818">
+     <parents>
+      <calendarYear href="http://courses.illinois.edu/cisapp/explorer/schedule/2012.xml" id="2012">
+       2012
+      </calendarYear>
+      <term href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall.xml" id="120128">
+       Fall 2012
+      </term>
+      <subject href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS.xml" id="AAS">
+       Asian American Studies
+      </subject>
+      <course href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/100.xml" id="100">
+       Intro Asian American Studies
+      </course>
+     </parents>
+     <sectionNumber>
+      AD7
+     </sectionNumber>
+     <statusCode>
+      A
+     </statusCode>
+     <partOfTerm>
+      1
+     </partOfTerm>
+     <sectionStatusCode>
+      A
+     </sectionStatusCode>
+     <enrollmentStatus>
+      Open
+     </enrollmentStatus>
+     <startDate>
+      2012-08-27-05:00
+     </startDate>
+     <endDate>
+      2012-12-12-06:00
+     </endDate>
+     <meetings>
+      <meeting id="0">
+       <type code="DIS">
+        discussion-recitation
+       </type>
+       <start>
+        01:00 PM
+       </start>
+       <end>
+        01:50 PM
+       </end>
+       <daysOfTheWeek>
+        W
+       </daysOfTheWeek>
+       <roomNumber>
+        1022
+       </roomNumber>
+       <buildingName>
+        Foreign Languages Building
+       </buildingName>
+       <instructors/>
+      </meeting>
+     </meetings>
+    </detailedSection>
+    <detailedSection href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/100/59819.xml" id="59819">
+     <parents>
+      <calendarYear href="http://courses.illinois.edu/cisapp/explorer/schedule/2012.xml" id="2012">
+       2012
+      </calendarYear>
+      <term href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall.xml" id="120128">
+       Fall 2012
+      </term>
+      <subject href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS.xml" id="AAS">
+       Asian American Studies
+      </subject>
+      <course href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/100.xml" id="100">
+       Intro Asian American Studies
+      </course>
+     </parents>
+     <sectionNumber>
+      AD8
+     </sectionNumber>
+     <statusCode>
+      A
+     </statusCode>
+     <partOfTerm>
+      1
+     </partOfTerm>
+     <sectionStatusCode>
+      A
+     </sectionStatusCode>
+     <enrollmentStatus>
+      Open
+     </enrollmentStatus>
+     <startDate>
+      2012-08-27-05:00
+     </startDate>
+     <endDate>
+      2012-12-12-06:00
+     </endDate>
+     <meetings>
+      <meeting id="0">
+       <type code="DIS">
+        discussion-recitation
+       </type>
+       <start>
+        02:00 PM
+       </start>
+       <end>
+        02:50 PM
+       </end>
+       <daysOfTheWeek>
+        W
+       </daysOfTheWeek>
+       <instructors/>
+      </meeting>
+     </meetings>
+    </detailedSection>
+    <detailedSection href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/100/59820.xml" id="59820">
+     <parents>
+      <calendarYear href="http://courses.illinois.edu/cisapp/explorer/schedule/2012.xml" id="2012">
+       2012
+      </calendarYear>
+      <term href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall.xml" id="120128">
+       Fall 2012
+      </term>
+      <subject href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS.xml" id="AAS">
+       Asian American Studies
+      </subject>
+      <course href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/100.xml" id="100">
+       Intro Asian American Studies
+      </course>
+     </parents>
+     <sectionNumber>
+      AD9
+     </sectionNumber>
+     <statusCode>
+      A
+     </statusCode>
+     <partOfTerm>
+      1
+     </partOfTerm>
+     <sectionStatusCode>
+      A
+     </sectionStatusCode>
+     <enrollmentStatus>
+      Open
+     </enrollmentStatus>
+     <startDate>
+      2012-08-27-05:00
+     </startDate>
+     <endDate>
+      2012-12-12-06:00
+     </endDate>
+     <meetings>
+      <meeting id="0">
+       <type code="DIS">
+        discussion-recitation
+       </type>
+       <start>
+        11:00 AM
+       </start>
+       <end>
+        11:50 AM
+       </end>
+       <daysOfTheWeek>
+        R
+       </daysOfTheWeek>
+       <instructors/>
+      </meeting>
+     </meetings>
+    </detailedSection>
+    <detailedSection href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/100/59821.xml" id="59821">
+     <parents>
+      <calendarYear href="http://courses.illinois.edu/cisapp/explorer/schedule/2012.xml" id="2012">
+       2012
+      </calendarYear>
+      <term href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall.xml" id="120128">
+       Fall 2012
+      </term>
+      <subject href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS.xml" id="AAS">
+       Asian American Studies
+      </subject>
+      <course href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/100.xml" id="100">
+       Intro Asian American Studies
+      </course>
+     </parents>
+     <sectionNumber>
+      ADA
+     </sectionNumber>
+     <statusCode>
+      A
+     </statusCode>
+     <partOfTerm>
+      1
+     </partOfTerm>
+     <sectionStatusCode>
+      A
+     </sectionStatusCode>
+     <enrollmentStatus>
+      Open
+     </enrollmentStatus>
+     <startDate>
+      2012-08-27-05:00
+     </startDate>
+     <endDate>
+      2012-12-12-06:00
+     </endDate>
+     <meetings>
+      <meeting id="0">
+       <type code="DIS">
+        discussion-recitation
+       </type>
+       <start>
+        12:00 PM
+       </start>
+       <end>
+        12:50 PM
+       </end>
+       <daysOfTheWeek>
+        R
+       </daysOfTheWeek>
+       <instructors/>
+      </meeting>
+     </meetings>
+    </detailedSection>
+    <detailedSection href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/100/29646.xml" id="29646">
+     <parents>
+      <calendarYear href="http://courses.illinois.edu/cisapp/explorer/schedule/2012.xml" id="2012">
+       2012
+      </calendarYear>
+      <term href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall.xml" id="120128">
+       Fall 2012
+      </term>
+      <subject href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS.xml" id="AAS">
+       Asian American Studies
+      </subject>
+      <course href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/100.xml" id="100">
+       Intro Asian American Studies
+      </course>
+     </parents>
+     <sectionNumber>
+      AL1
+     </sectionNumber>
+     <statusCode>
+      A
+     </statusCode>
+     <partOfTerm>
+      1
+     </partOfTerm>
+     <sectionStatusCode>
+      A
+     </sectionStatusCode>
+     <enrollmentStatus>
+      Open
+     </enrollmentStatus>
+     <startDate>
+      2012-08-27-05:00
+     </startDate>
+     <endDate>
+      2012-12-12-06:00
+     </endDate>
+     <meetings>
+      <meeting id="0">
+       <type code="LEC">
+        lecture
+       </type>
+       <start>
+        09:00 AM
+       </start>
+       <end>
+        09:50 AM
+       </end>
+       <daysOfTheWeek>
+        MW
+       </daysOfTheWeek>
+       <roomNumber>
+        THEAT
+       </roomNumber>
+       <buildingName>
+        Lincoln Hall
+       </buildingName>
+       <instructors>
+        <instructor firstName="S" lastName="Kwon">
+         Kwon, S
+        </instructor>
+       </instructors>
+      </meeting>
+     </meetings>
+    </detailedSection>
+   </detailedSections>
+  </cascadingCourse>
+  <cascadingCourse href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/184.xml" id="AAS 184">
+   <parents>
+    <calendarYear href="http://courses.illinois.edu/cisapp/explorer/schedule/2012.xml" id="2012">
+     2012
+    </calendarYear>
+    <term href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall.xml" id="120128">
+     Fall 2012
+    </term>
+    <subject href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS.xml" id="AAS">
+     Asian American Studies
+    </subject>
+   </parents>
+   <label>
+    Asian American Cultures
+   </label>
+   <description>
+    Same as ANTH 184 and SOC 124. See ANTH 184.
+   </description>
+   <creditHours>
+    3 hours.
+   </creditHours>
+   <courseSectionInformation>
+    Same as ANTH 184 and SOC 124. See ANTH 184.
+   </courseSectionInformation>
+   <sectionDegreeAttributes>
+    UIUC Social Sciences, and US Minority Culture(s) course.
+   </sectionDegreeAttributes>
+   <genEdCategories>
+    <category id="SBS">
+     <description>
+      Social &amp; Behavioral Sciences
+     </description>
+     <ns2:genEdAttributes>
+      <genEdAttribute code="1SS">
+       UIUC Social Sciences
+      </genEdAttribute>
+     </genEdAttributes>
+    </category>
+    <category id="CNW">
+     <description>
+      Cultural Studies: Non-Western/U.S. Minority Culture(s)
+     </description>
+     <ns2:genEdAttributes>
+      <genEdAttribute code="1US">
+       UIUC: US Minority Culture(s)
+      </genEdAttribute>
+     </genEdAttributes>
+    </category>
+   </genEdCategories>
+   <detailedSections>
+    <detailedSection href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/184/37061.xml" id="37061">
+     <parents>
+      <calendarYear href="http://courses.illinois.edu/cisapp/explorer/schedule/2012.xml" id="2012">
+       2012
+      </calendarYear>
+      <term href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall.xml" id="120128">
+       Fall 2012
+      </term>
+      <subject href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS.xml" id="AAS">
+       Asian American Studies
+      </subject>
+      <course href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/184.xml" id="184">
+       Asian American Cultures
+      </course>
+     </parents>
+     <sectionNumber>
+      1
+     </sectionNumber>
+     <statusCode>
+      A
+     </statusCode>
+     <partOfTerm>
+      1
+     </partOfTerm>
+     <sectionStatusCode>
+      A
+     </sectionStatusCode>
+     <enrollmentStatus>
+      CrossListOpen
+     </enrollmentStatus>
+     <startDate>
+      2012-08-27-05:00
+     </startDate>
+     <endDate>
+      2012-12-12-06:00
+     </endDate>
+     <meetings>
+      <meeting id="0">
+       <type code="LCD">
+        lecture-discussion
+       </type>
+       <start>
+        12:00 PM
+       </start>
+       <end>
+        12:50 PM
+       </end>
+       <daysOfTheWeek>
+        MWF
+       </daysOfTheWeek>
+       <roomNumber>
+        150
+       </roomNumber>
+       <buildingName>
+        Animal Sciences Laboratory
+       </buildingName>
+       <instructors/>
+      </meeting>
+     </meetings>
+    </detailedSection>
+   </detailedSections>
+  </cascadingCourse>
+  <cascadingCourse href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/211.xml" id="AAS 211">
+   <parents>
+    <calendarYear href="http://courses.illinois.edu/cisapp/explorer/schedule/2012.xml" id="2012">
+     2012
+    </calendarYear>
+    <term href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall.xml" id="120128">
+     Fall 2012
+    </term>
+    <subject href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS.xml" id="AAS">
+     Asian American Studies
+    </subject>
+   </parents>
+   <label>
+    Asian Americans and the Arts
+   </label>
+   <description>
+    Examination of Asian American artistic expressions in the visual and the performing arts providing historical, theoretical, and conceptual foundations of understanding the history of various art genres in Asian American communities. Prerequisite: AAS 100 or AAS 120, or consent of instructor.
+   </description>
+   <creditHours>
+    3 hours.
+   </creditHours>
+   <courseSectionInformation>
+    Prerequisite: AAS 100 or AAS 120, or consent of instructor.
+   </courseSectionInformation>
+   <sectionDegreeAttributes>
+    Literature and the Arts, and US Minority Culture(s) course.
+   </sectionDegreeAttributes>
+   <genEdCategories>
+    <category id="HUM">
+     <description>
+      Humanities &amp; the Arts
+     </description>
+     <ns2:genEdAttributes>
+      <genEdAttribute code="1LA">
+       UIUC: Literature and the Arts
+      </genEdAttribute>
+     </genEdAttributes>
+    </category>
+    <category id="CNW">
+     <description>
+      Cultural Studies: Non-Western/U.S. Minority Culture(s)
+     </description>
+     <ns2:genEdAttributes>
+      <genEdAttribute code="1US">
+       UIUC: US Minority Culture(s)
+      </genEdAttribute>
+     </genEdAttributes>
+    </category>
+   </genEdCategories>
+   <detailedSections>
+    <detailedSection href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/211/53947.xml" id="53947">
+     <parents>
+      <calendarYear href="http://courses.illinois.edu/cisapp/explorer/schedule/2012.xml" id="2012">
+       2012
+      </calendarYear>
+      <term href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall.xml" id="120128">
+       Fall 2012
+      </term>
+      <subject href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS.xml" id="AAS">
+       Asian American Studies
+      </subject>
+      <course href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/211.xml" id="211">
+       Asian Americans and the Arts
+      </course>
+     </parents>
+     <sectionNumber>
+      A
+     </sectionNumber>
+     <statusCode>
+      A
+     </statusCode>
+     <partOfTerm>
+      1
+     </partOfTerm>
+     <sectionStatusCode>
+      A
+     </sectionStatusCode>
+     <enrollmentStatus>
+      Open
+     </enrollmentStatus>
+     <startDate>
+      2012-08-27-05:00
+     </startDate>
+     <endDate>
+      2012-12-12-06:00
+     </endDate>
+     <meetings>
+      <meeting id="0">
+       <type code="LCD">
+        lecture-discussion
+       </type>
+       <start>
+        09:00 AM
+       </start>
+       <end>
+        10:20 AM
+       </end>
+       <daysOfTheWeek>
+        TR
+       </daysOfTheWeek>
+       <instructors>
+        <instructor firstName="M" lastName="Nguyen">
+         Nguyen, M
+        </instructor>
+       </instructors>
+      </meeting>
+     </meetings>
+    </detailedSection>
+   </detailedSections>
+  </cascadingCourse>
+  <cascadingCourse href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/250.xml" id="AAS 250">
+   <parents>
+    <calendarYear href="http://courses.illinois.edu/cisapp/explorer/schedule/2012.xml" id="2012">
+     2012
+    </calendarYear>
+    <term href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall.xml" id="120128">
+     Fall 2012
+    </term>
+    <subject href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS.xml" id="AAS">
+     Asian American Studies
+    </subject>
+   </parents>
+   <label>
+    Asian American Ethnic Groups
+   </label>
+   <description>
+    Intensive interdisciplinary study of a particular Asian American Ethnic group (specific ethnic group focus will change every semester). May be repeated in the same or separate terms to a maximum of 9 hours. Prerequisite: Any AAS course at the 100- or 200-level or consent of instructor.
+   </description>
+   <creditHours>
+    3 hours.
+   </creditHours>
+   <courseSectionInformation>
+    May be repeated in the same or separate terms to a maximum of 9 hours. Prerequisite: Any AAS course at the 100- or 200-level or consent of instructor.
+   </courseSectionInformation>
+   <detailedSections>
+    <detailedSection href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/250/58091.xml" id="58091">
+     <parents>
+      <calendarYear href="http://courses.illinois.edu/cisapp/explorer/schedule/2012.xml" id="2012">
+       2012
+      </calendarYear>
+      <term href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall.xml" id="120128">
+       Fall 2012
+      </term>
+      <subject href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS.xml" id="AAS">
+       Asian American Studies
+      </subject>
+      <course href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/250.xml" id="250">
+       Asian American Ethnic Groups
+      </course>
+     </parents>
+     <sectionNumber>
+      B
+     </sectionNumber>
+     <sectionTitle>
+      Korean Americans
+     </sectionTitle>
+     <statusCode>
+      A
+     </statusCode>
+     <sectionText>
+      Introduction to the study of Korean Americans in the United States with emphasis on immigration history, community formation, and cultural expressions. Using an interdisciplinary approach, the course examines Korean America with readings that include novels and plays as well as with viewing of films.
+     </sectionText>
+     <partOfTerm>
+      1
+     </partOfTerm>
+     <sectionStatusCode>
+      A
+     </sectionStatusCode>
+     <enrollmentStatus>
+      Open
+     </enrollmentStatus>
+     <startDate>
+      2012-08-27-05:00
+     </startDate>
+     <endDate>
+      2012-12-12-06:00
+     </endDate>
+     <meetings>
+      <meeting id="0">
+       <type code="LCD">
+        lecture-discussion
+       </type>
+       <start>
+        01:00 PM
+       </start>
+       <end>
+        02:20 PM
+       </end>
+       <daysOfTheWeek>
+        TR
+       </daysOfTheWeek>
+       <instructors>
+        <instructor firstName="E" lastName="Lee">
+         Lee, E
+        </instructor>
+       </instructors>
+      </meeting>
+     </meetings>
+    </detailedSection>
+   </detailedSections>
+  </cascadingCourse>
+  <cascadingCourse href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/286.xml" id="AAS 286">
+   <parents>
+    <calendarYear href="http://courses.illinois.edu/cisapp/explorer/schedule/2012.xml" id="2012">
+     2012
+    </calendarYear>
+    <term href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall.xml" id="120128">
+     Fall 2012
+    </term>
+    <subject href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS.xml" id="AAS">
+     Asian American Studies
+    </subject>
+   </parents>
+   <label>
+    Asian American Literature
+   </label>
+   <description>
+    Same as ENGL 286. See ENGL 286.
+   </description>
+   <creditHours>
+    3 hours.
+   </creditHours>
+   <courseSectionInformation>
+    Same as ENGL 286. See ENGL 286.
+   </courseSectionInformation>
+   <sectionDegreeAttributes>
+    Literature and the Arts, and US Minority Culture(s) course.
+   </sectionDegreeAttributes>
+   <genEdCategories>
+    <category id="HUM">
+     <description>
+      Humanities &amp; the Arts
+     </description>
+     <ns2:genEdAttributes>
+      <genEdAttribute code="1LA">
+       UIUC: Literature and the Arts
+      </genEdAttribute>
+     </genEdAttributes>
+    </category>
+    <category id="CNW">
+     <description>
+      Cultural Studies: Non-Western/U.S. Minority Culture(s)
+     </description>
+     <ns2:genEdAttributes>
+      <genEdAttribute code="1US">
+       UIUC: US Minority Culture(s)
+      </genEdAttribute>
+     </genEdAttributes>
+    </category>
+   </genEdCategories>
+   <detailedSections>
+    <detailedSection href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/286/41932.xml" id="41932">
+     <parents>
+      <calendarYear href="http://courses.illinois.edu/cisapp/explorer/schedule/2012.xml" id="2012">
+       2012
+      </calendarYear>
+      <term href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall.xml" id="120128">
+       Fall 2012
+      </term>
+      <subject href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS.xml" id="AAS">
+       Asian American Studies
+      </subject>
+      <course href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/286.xml" id="286">
+       Asian American Literature
+      </course>
+     </parents>
+     <sectionNumber>
+      M
+     </sectionNumber>
+     <statusCode>
+      A
+     </statusCode>
+     <sectionText>
+      This course offers an understanding of the historical emergence of Asian American literature in the twentieth century. It examines the ways in which U. S. relations with Asia over the last century in the contexts of colonialism, semi-colonialism, immigration, and war have shaped representations of Asia and Asians in the United States. This course examines the liminal position of Asians in a national imaginary defined by binary black-white relations, the ways in which Asians have been positioned as invisible minorities, model minorities, and perpetual aliens. How has this paradoxical position as model minority and yellow peril impacted representations of gender, race, and sexuality in Asian American literature? How does Asian American literature offer new perspectives and understandings of race and Americanness in the twentieth century? While the course offers a historical context for reading literature, the focus will be on literary representation?what genres and forms have defined the emergence of Asian American writing; what narrative strategies do Asian American writers adopt in translating their stories to audiences of ?insiders? and ?outsiders;? what is the relationship between art and politics in minority writing? Some of the recurring themes that appear in Asian American writing are the contradictions of patriotism, intergenerational conflict or transgenerational haunting, the paradoxes of visibility and invisibility; the impossibility of assimilation; the recovery of lost histories; and the intersection of racial and sexual stereotypes.
+     </sectionText>
+     <partOfTerm>
+      1
+     </partOfTerm>
+     <sectionStatusCode>
+      A
+     </sectionStatusCode>
+     <enrollmentStatus>
+      CrossListOpen
+     </enrollmentStatus>
+     <startDate>
+      2012-08-27-05:00
+     </startDate>
+     <endDate>
+      2012-12-12-06:00
+     </endDate>
+     <meetings>
+      <meeting id="0">
+       <type code="LCD">
+        lecture-discussion
+       </type>
+       <start>
+        09:30 AM
+       </start>
+       <end>
+        10:45 AM
+       </end>
+       <daysOfTheWeek>
+        TR
+       </daysOfTheWeek>
+       <roomNumber>
+        150
+       </roomNumber>
+       <buildingName>
+        English Building
+       </buildingName>
+       <instructors>
+        <instructor firstName="S" lastName="Koshy">
+         Koshy, S
+        </instructor>
+       </instructors>
+      </meeting>
+     </meetings>
+    </detailedSection>
+   </detailedSections>
+  </cascadingCourse>
+  <cascadingCourse href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/310.xml" id="AAS 310">
+   <parents>
+    <calendarYear href="http://courses.illinois.edu/cisapp/explorer/schedule/2012.xml" id="2012">
+     2012
+    </calendarYear>
+    <term href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall.xml" id="120128">
+     Fall 2012
+    </term>
+    <subject href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS.xml" id="AAS">
+     Asian American Studies
+    </subject>
+   </parents>
+   <label>
+    Race and Cultural Diversity
+   </label>
+   <description>
+    Same as AFRO 310, EPS 310, and LLS 310. See EPS 310.
+   </description>
+   <creditHours>
+    4 hours.
+   </creditHours>
+   <courseSectionInformation>
+    Same as AFRO 310, EPS 310, and LLS 310. See EPS 310.
+   </courseSectionInformation>
+   <sectionDegreeAttributes>
+    Advanced Composition, and US Minority Culture(s) course.
+   </sectionDegreeAttributes>
+   <genEdCategories>
+    <category id="ACP">
+     <description>
+      Advanced Composition
+     </description>
+     <ns2:genEdAttributes>
+      <genEdAttribute code="1CLL">
+       UIUC: Advanced Composition
+      </genEdAttribute>
+     </genEdAttributes>
+    </category>
+    <category id="CNW">
+     <description>
+      Cultural Studies: Non-Western/U.S. Minority Culture(s)
+     </description>
+     <ns2:genEdAttributes>
+      <genEdAttribute code="1US">
+       UIUC: US Minority Culture(s)
+      </genEdAttribute>
+     </genEdAttributes>
+    </category>
+   </genEdCategories>
+   <detailedSections>
+    <detailedSection href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/310/33770.xml" id="33770">
+     <parents>
+      <calendarYear href="http://courses.illinois.edu/cisapp/explorer/schedule/2012.xml" id="2012">
+       2012
+      </calendarYear>
+      <term href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall.xml" id="120128">
+       Fall 2012
+      </term>
+      <subject href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS.xml" id="AAS">
+       Asian American Studies
+      </subject>
+      <course href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/310.xml" id="310">
+       Race and Cultural Diversity
+      </course>
+     </parents>
+     <sectionNumber>
+      A
+     </sectionNumber>
+     <creditHours>
+      4 hours
+     </creditHours>
+     <statusCode>
+      A
+     </statusCode>
+     <partOfTerm>
+      1
+     </partOfTerm>
+     <sectionStatusCode>
+      A
+     </sectionStatusCode>
+     <enrollmentStatus>
+      Closed
+     </enrollmentStatus>
+     <startDate>
+      2012-08-27-05:00
+     </startDate>
+     <endDate>
+      2012-12-12-06:00
+     </endDate>
+     <meetings>
+      <meeting id="0">
+       <type code="DIS">
+        discussion-recitation
+       </type>
+       <start>
+        02:00 PM
+       </start>
+       <end>
+        03:50 PM
+       </end>
+       <daysOfTheWeek>
+        R
+       </daysOfTheWeek>
+       <roomNumber>
+        33
+       </roomNumber>
+       <buildingName>
+        Education Building
+       </buildingName>
+       <instructors/>
+      </meeting>
+      <meeting id="1">
+       <type code="LEC">
+        lecture
+       </type>
+       <start>
+        02:00 PM
+       </start>
+       <end>
+        03:50 PM
+       </end>
+       <daysOfTheWeek>
+        T
+       </daysOfTheWeek>
+       <roomNumber>
+        166
+       </roomNumber>
+       <buildingName>
+        Education Building
+       </buildingName>
+       <instructors>
+        <instructor firstName="J" lastName="Anderson">
+         Anderson, J
+        </instructor>
+        <instructor firstName="D" lastName="Hill">
+         Hill, D
+        </instructor>
+       </instructors>
+      </meeting>
+     </meetings>
+    </detailedSection>
+    <detailedSection href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/310/33764.xml" id="33764">
+     <parents>
+      <calendarYear href="http://courses.illinois.edu/cisapp/explorer/schedule/2012.xml" id="2012">
+       2012
+      </calendarYear>
+      <term href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall.xml" id="120128">
+       Fall 2012
+      </term>
+      <subject href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS.xml" id="AAS">
+       Asian American Studies
+      </subject>
+      <course href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/310.xml" id="310">
+       Race and Cultural Diversity
+      </course>
+     </parents>
+     <sectionNumber>
+      B
+     </sectionNumber>
+     <creditHours>
+      4 hours
+     </creditHours>
+     <statusCode>
+      A
+     </statusCode>
+     <partOfTerm>
+      1
+     </partOfTerm>
+     <sectionStatusCode>
+      A
+     </sectionStatusCode>
+     <enrollmentStatus>
+      CrossListOpen
+     </enrollmentStatus>
+     <startDate>
+      2012-08-27-05:00
+     </startDate>
+     <endDate>
+      2012-12-12-06:00
+     </endDate>
+     <meetings>
+      <meeting id="0">
+       <type code="DIS">
+        discussion-recitation
+       </type>
+       <start>
+        02:00 PM
+       </start>
+       <end>
+        03:50 PM
+       </end>
+       <daysOfTheWeek>
+        R
+       </daysOfTheWeek>
+       <roomNumber>
+        389
+       </roomNumber>
+       <buildingName>
+        Education Building
+       </buildingName>
+       <instructors/>
+      </meeting>
+      <meeting id="1">
+       <type code="LEC">
+        lecture
+       </type>
+       <start>
+        02:00 PM
+       </start>
+       <end>
+        03:50 PM
+       </end>
+       <daysOfTheWeek>
+        T
+       </daysOfTheWeek>
+       <roomNumber>
+        166
+       </roomNumber>
+       <buildingName>
+        Education Building
+       </buildingName>
+       <instructors>
+        <instructor firstName="J" lastName="Anderson">
+         Anderson, J
+        </instructor>
+        <instructor firstName="D" lastName="Callier">
+         Callier, D
+        </instructor>
+       </instructors>
+      </meeting>
+     </meetings>
+    </detailedSection>
+   </detailedSections>
+  </cascadingCourse>
+  <cascadingCourse href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/315.xml" id="AAS 315">
+   <parents>
+    <calendarYear href="http://courses.illinois.edu/cisapp/explorer/schedule/2012.xml" id="2012">
+     2012
+    </calendarYear>
+    <term href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall.xml" id="120128">
+     Fall 2012
+    </term>
+    <subject href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS.xml" id="AAS">
+     Asian American Studies
+    </subject>
+   </parents>
+   <label>
+    War, Memory, and Cinema
+   </label>
+   <description>
+    Interdisciplinary examination of the ways that memories of warm, trauma, and immigration are produced through the medium of film. Because war has been key to discourses and practices of imperialism and globalization, some questions addressed will include how these wars have impacted the nation and the global order, as well as how images about these wars produced important constructions of race, gender, and sexuality for national and cultural identities. Also examines the aftereffects of war by analyzing connections between war's trauma, race, immigration, and incarceration. Students will read critical texts, film theory, screenplays, and view films. Same as GWS 315. Prerequisite: AAS 100 or AAS 120, or consent of the instructor.
+   </description>
+   <creditHours>
+    3 hours.
+   </creditHours>
+   <courseSectionInformation>
+    Same as GWS 315. Prerequisite: AAS 100 or AAS 120, or consent of the instructor.
+   </courseSectionInformation>
+   <detailedSections>
+    <detailedSection href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/315/58268.xml" id="58268">
+     <parents>
+      <calendarYear href="http://courses.illinois.edu/cisapp/explorer/schedule/2012.xml" id="2012">
+       2012
+      </calendarYear>
+      <term href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall.xml" id="120128">
+       Fall 2012
+      </term>
+      <subject href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS.xml" id="AAS">
+       Asian American Studies
+      </subject>
+      <course href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/315.xml" id="315">
+       War, Memory, and Cinema
+      </course>
+     </parents>
+     <sectionNumber>
+      A
+     </sectionNumber>
+     <creditHours>
+      3 hours
+     </creditHours>
+     <statusCode>
+      A
+     </statusCode>
+     <partOfTerm>
+      1
+     </partOfTerm>
+     <sectionStatusCode>
+      A
+     </sectionStatusCode>
+     <enrollmentStatus>
+      CrossListOpen
+     </enrollmentStatus>
+     <startDate>
+      2012-08-27-05:00
+     </startDate>
+     <endDate>
+      2012-12-12-06:00
+     </endDate>
+     <meetings>
+      <meeting id="0">
+       <type code="LCD">
+        lecture-discussion
+       </type>
+       <start>
+        03:30 PM
+       </start>
+       <end>
+        06:20 PM
+       </end>
+       <daysOfTheWeek>
+        W
+       </daysOfTheWeek>
+       <instructors>
+        <instructor firstName="F" lastName="Ngo">
+         Ngo, F
+        </instructor>
+       </instructors>
+      </meeting>
+     </meetings>
+    </detailedSection>
+   </detailedSections>
+  </cascadingCourse>
+  <cascadingCourse href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/346.xml" id="AAS 346">
+   <parents>
+    <calendarYear href="http://courses.illinois.edu/cisapp/explorer/schedule/2012.xml" id="2012">
+     2012
+    </calendarYear>
+    <term href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall.xml" id="120128">
+     Fall 2012
+    </term>
+    <subject href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS.xml" id="AAS">
+     Asian American Studies
+    </subject>
+   </parents>
+   <label>
+    Asian American Youth
+   </label>
+   <description>
+    Explores cultural production of second-generation Asian American youth as a historical and social formation. Course examines how youth are actively shaping the U.S. landscape in terms of identity formation, youth, culture, education, juvenile justice, politics and activism, and community formations. These experiences are examined in backdrop of larger historical, economic, racial, social and political forces in the United States. Same as HDFS 341.
+   </description>
+   <creditHours>
+    3 hours.
+   </creditHours>
+   <courseSectionInformation>
+    Same as HDFS 341.
+   </courseSectionInformation>
+   <detailedSections>
+    <detailedSection href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/346/49995.xml" id="49995">
+     <parents>
+      <calendarYear href="http://courses.illinois.edu/cisapp/explorer/schedule/2012.xml" id="2012">
+       2012
+      </calendarYear>
+      <term href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall.xml" id="120128">
+       Fall 2012
+      </term>
+      <subject href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS.xml" id="AAS">
+       Asian American Studies
+      </subject>
+      <course href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/346.xml" id="346">
+       Asian American Youth
+      </course>
+     </parents>
+     <sectionNumber>
+      A
+     </sectionNumber>
+     <statusCode>
+      A
+     </statusCode>
+     <partOfTerm>
+      1
+     </partOfTerm>
+     <sectionStatusCode>
+      A
+     </sectionStatusCode>
+     <enrollmentStatus>
+      CrossListOpen
+     </enrollmentStatus>
+     <startDate>
+      2012-08-27-05:00
+     </startDate>
+     <endDate>
+      2012-12-12-06:00
+     </endDate>
+     <meetings>
+      <meeting id="0">
+       <type code="LCD">
+        lecture-discussion
+       </type>
+       <start>
+        11:00 AM
+       </start>
+       <end>
+        12:20 PM
+       </end>
+       <daysOfTheWeek>
+        TR
+       </daysOfTheWeek>
+       <roomNumber>
+        3
+       </roomNumber>
+       <buildingName>
+        Christopher Hall
+       </buildingName>
+       <instructors>
+        <instructor firstName="S" lastName="Kwon">
+         Kwon, S
+        </instructor>
+       </instructors>
+      </meeting>
+     </meetings>
+    </detailedSection>
+   </detailedSections>
+  </cascadingCourse>
+  <cascadingCourse href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/365.xml" id="AAS 365">
+   <parents>
+    <calendarYear href="http://courses.illinois.edu/cisapp/explorer/schedule/2012.xml" id="2012">
+     2012
+    </calendarYear>
+    <term href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall.xml" id="120128">
+     Fall 2012
+    </term>
+    <subject href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS.xml" id="AAS">
+     Asian American Studies
+    </subject>
+   </parents>
+   <label>
+    Asian American Media and Film
+   </label>
+   <description>
+    An examination of media generally and films and videos more specifically (experimental, documentary, independent, and Hollywood features) by, for, and about Asian Americans. Same as MACS 365. Prerequisite: Any AAS course at the 100- or 200-level, or consent of instructor.
+   </description>
+   <creditHours>
+    3 hours.
+   </creditHours>
+   <courseSectionInformation>
+    Same as MACS 365. Prerequisite: Any AAS course at the 100- or 200-level, or consent of instructor.
+   </courseSectionInformation>
+   <detailedSections>
+    <detailedSection href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/365/42862.xml" id="42862">
+     <parents>
+      <calendarYear href="http://courses.illinois.edu/cisapp/explorer/schedule/2012.xml" id="2012">
+       2012
+      </calendarYear>
+      <term href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall.xml" id="120128">
+       Fall 2012
+      </term>
+      <subject href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS.xml" id="AAS">
+       Asian American Studies
+      </subject>
+      <course href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/365.xml" id="365">
+       Asian American Media and Film
+      </course>
+     </parents>
+     <sectionNumber>
+      A
+     </sectionNumber>
+     <statusCode>
+      A
+     </statusCode>
+     <partOfTerm>
+      1
+     </partOfTerm>
+     <sectionStatusCode>
+      A
+     </sectionStatusCode>
+     <enrollmentStatus>
+      CrossListOpen
+     </enrollmentStatus>
+     <startDate>
+      2012-08-27-05:00
+     </startDate>
+     <endDate>
+      2012-12-12-06:00
+     </endDate>
+     <meetings>
+      <meeting id="0">
+       <type code="LCD">
+        lecture-discussion
+       </type>
+       <start>
+        02:00 PM
+       </start>
+       <end>
+        04:50 PM
+       </end>
+       <daysOfTheWeek>
+        M
+       </daysOfTheWeek>
+       <instructors>
+        <instructor firstName="C" lastName="Yang">
+         Yang, C
+        </instructor>
+       </instructors>
+      </meeting>
+     </meetings>
+    </detailedSection>
+   </detailedSections>
+  </cascadingCourse>
+  <cascadingCourse href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/402.xml" id="AAS 402">
+   <parents>
+    <calendarYear href="http://courses.illinois.edu/cisapp/explorer/schedule/2012.xml" id="2012">
+     2012
+    </calendarYear>
+    <term href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall.xml" id="120128">
+     Fall 2012
+    </term>
+    <subject href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS.xml" id="AAS">
+     Asian American Studies
+    </subject>
+   </parents>
+   <label>
+    Asian American Education
+   </label>
+   <description>
+    Same as EPS 402. See EPS 402.
+   </description>
+   <creditHours>
+    4 hours.
+   </creditHours>
+   <courseSectionInformation>
+    Same as EPS 402. See EPS 402.
+   </courseSectionInformation>
+   <sectionRegistrationNotes>
+    Restricted to Undergrad - Urbana-Champaign.
+   </sectionRegistrationNotes>
+   <sectionDegreeAttributes>
+    Advanced Composition, and US Minority Culture(s) course.
+   </sectionDegreeAttributes>
+   <genEdCategories>
+    <category id="ACP">
+     <description>
+      Advanced Composition
+     </description>
+     <ns2:genEdAttributes>
+      <genEdAttribute code="1CLL">
+       UIUC: Advanced Composition
+      </genEdAttribute>
+     </genEdAttributes>
+    </category>
+    <category id="CNW">
+     <description>
+      Cultural Studies: Non-Western/U.S. Minority Culture(s)
+     </description>
+     <ns2:genEdAttributes>
+      <genEdAttribute code="1US">
+       UIUC: US Minority Culture(s)
+      </genEdAttribute>
+     </genEdAttributes>
+    </category>
+   </genEdCategories>
+   <detailedSections>
+    <detailedSection href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/402/45567.xml" id="45567">
+     <parents>
+      <calendarYear href="http://courses.illinois.edu/cisapp/explorer/schedule/2012.xml" id="2012">
+       2012
+      </calendarYear>
+      <term href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall.xml" id="120128">
+       Fall 2012
+      </term>
+      <subject href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS.xml" id="AAS">
+       Asian American Studies
+      </subject>
+      <course href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/402.xml" id="402">
+       Asian American Education
+      </course>
+     </parents>
+     <sectionNumber>
+      A
+     </sectionNumber>
+     <statusCode>
+      A
+     </statusCode>
+     <partOfTerm>
+      1
+     </partOfTerm>
+     <sectionStatusCode>
+      A
+     </sectionStatusCode>
+     <enrollmentStatus>
+      CrossListOpen (Restricted)
+     </enrollmentStatus>
+     <startDate>
+      2012-08-27-05:00
+     </startDate>
+     <endDate>
+      2012-12-12-06:00
+     </endDate>
+     <meetings>
+      <meeting id="0">
+       <type code="LCD">
+        lecture-discussion
+       </type>
+       <start>
+        10:00 AM
+       </start>
+       <end>
+        11:50 AM
+       </end>
+       <daysOfTheWeek>
+        T
+       </daysOfTheWeek>
+       <roomNumber>
+        385
+       </roomNumber>
+       <buildingName>
+        Education Building
+       </buildingName>
+       <instructors>
+        <instructor firstName="Y" lastName="Pak">
+         Pak, Y
+        </instructor>
+       </instructors>
+      </meeting>
+     </meetings>
+    </detailedSection>
+   </detailedSections>
+  </cascadingCourse>
+  <cascadingCourse href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/435.xml" id="AAS 435">
+   <parents>
+    <calendarYear href="http://courses.illinois.edu/cisapp/explorer/schedule/2012.xml" id="2012">
+     2012
+    </calendarYear>
+    <term href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall.xml" id="120128">
+     Fall 2012
+    </term>
+    <subject href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS.xml" id="AAS">
+     Asian American Studies
+    </subject>
+   </parents>
+   <label>
+    Commodifying Difference
+   </label>
+   <description>
+    Same as AFRO 435, GWS 435, LLS 435, and MACS 432. See LLS 435.
+   </description>
+   <creditHours>
+    3 OR 4 hours.
+   </creditHours>
+   <courseSectionInformation>
+    Same as AFRO 435, GWS 435, LLS 435, and MACS 432. See LLS 435.
+   </courseSectionInformation>
+   <sectionRegistrationNotes>
+    Restricted to Undergrad - Urbana-Champaign.
+   </sectionRegistrationNotes>
+   <detailedSections>
+    <detailedSection href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/435/60147.xml" id="60147">
+     <parents>
+      <calendarYear href="http://courses.illinois.edu/cisapp/explorer/schedule/2012.xml" id="2012">
+       2012
+      </calendarYear>
+      <term href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall.xml" id="120128">
+       Fall 2012
+      </term>
+      <subject href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS.xml" id="AAS">
+       Asian American Studies
+      </subject>
+      <course href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/435.xml" id="435">
+       Commodifying Difference
+      </course>
+     </parents>
+     <sectionNumber>
+      U
+     </sectionNumber>
+     <creditHours>
+      3 hours
+     </creditHours>
+     <statusCode>
+      A
+     </statusCode>
+     <sectionText>
+      Topic: "The Body as Text in Performance." This course will function as an interdisciplinary examination of how racial, ethnic, and gender difference is negotiated through popular culture, media, and performance, and how racial, ethnic, and gendered communities use cultural forms to express identity and difference. Among the theoretical questions explored are the politics of representation, agency and authenticity, cultural commodification, transnationalism, and body politics. This course will ask students to consider how one reads a body, a body of work, and take as its basic premise that all bodies ask to be read, whether these bodies are socially, culturally, racially, and sexually coded, or bodies of work. In this course students will trace the historical underpinnings of cultural movements and performances, from the 1960s to the present, in order to underscore the relationship between exercises of everyday life and acts on stage. Some of the cultural forms examined will be cinematic and televisual texts, musical forms, performance art, and theater.
+     </sectionText>
+     <partOfTerm>
+      1
+     </partOfTerm>
+     <sectionStatusCode>
+      A
+     </sectionStatusCode>
+     <enrollmentStatus>
+      CrossListOpen (Restricted)
+     </enrollmentStatus>
+     <startDate>
+      2012-08-27-05:00
+     </startDate>
+     <endDate>
+      2012-12-12-06:00
+     </endDate>
+     <meetings>
+      <meeting id="0">
+       <type code="LCD">
+        lecture-discussion
+       </type>
+       <start>
+        04:00 PM
+       </start>
+       <end>
+        06:20 PM
+       </end>
+       <daysOfTheWeek>
+        M
+       </daysOfTheWeek>
+       <instructors/>
+      </meeting>
+     </meetings>
+    </detailedSection>
+   </detailedSections>
+  </cascadingCourse>
+  <cascadingCourse href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/490.xml" id="AAS 490">
+   <parents>
+    <calendarYear href="http://courses.illinois.edu/cisapp/explorer/schedule/2012.xml" id="2012">
+     2012
+    </calendarYear>
+    <term href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall.xml" id="120128">
+     Fall 2012
+    </term>
+    <subject href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS.xml" id="AAS">
+     Asian American Studies
+    </subject>
+   </parents>
+   <label>
+    Adv Topics in Asian Am Studies
+   </label>
+   <description>
+    Research seminar on specialized topics in Asian American Studies. May be repeated if topics vary. Students may register in more than one section per term if topics vary. Prerequisite: AAS 100 or any Asian American Studies course, or consent of instructor.
+   </description>
+   <creditHours>
+    3 OR 4 hours.
+   </creditHours>
+   <courseSectionInformation>
+    May be repeated if topics vary. Students may register in more than one section per term if topics vary. Prerequisite: AAS 100 or any Asian American Studies course, or consent of instructor.
+   </courseSectionInformation>
+   <sectionRegistrationNotes>
+    Restricted to students with Graduate class standing.
+   </sectionRegistrationNotes>
+   <detailedSections>
+    <detailedSection href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/490/31315.xml" id="31315">
+     <parents>
+      <calendarYear href="http://courses.illinois.edu/cisapp/explorer/schedule/2012.xml" id="2012">
+       2012
+      </calendarYear>
+      <term href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall.xml" id="120128">
+       Fall 2012
+      </term>
+      <subject href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS.xml" id="AAS">
+       Asian American Studies
+      </subject>
+      <course href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/490.xml" id="490">
+       Adv Topics in Asian Am Studies
+      </course>
+     </parents>
+     <sectionNumber>
+      ALO
+     </sectionNumber>
+     <sectionTitle>
+      Amer Univ meets the Pacif Cent
+     </sectionTitle>
+     <creditHours>
+      4 hours
+     </creditHours>
+     <statusCode>
+      A
+     </statusCode>
+     <sectionText>
+      American University Meets the Pacific Century.  Meets with ANTH 499, CRN 59607, section ALO.
+     </sectionText>
+     <partOfTerm>
+      1
+     </partOfTerm>
+     <sectionStatusCode>
+      A
+     </sectionStatusCode>
+     <enrollmentStatus>
+      Closed (Restricted)
+     </enrollmentStatus>
+     <startDate>
+      2012-08-27-05:00
+     </startDate>
+     <endDate>
+      2012-12-12-06:00
+     </endDate>
+     <meetings>
+      <meeting id="0">
+       <type code="CNF">
+        conference
+       </type>
+       <start>
+        09:00 AM
+       </start>
+       <end>
+        12:00 PM
+       </end>
+       <instructors>
+        <instructor firstName="A" lastName="Lo">
+         Lo, A
+        </instructor>
+       </instructors>
+      </meeting>
+     </meetings>
+    </detailedSection>
+   </detailedSections>
+  </cascadingCourse>
+  <cascadingCourse href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/561.xml" id="AAS 561">
+   <parents>
+    <calendarYear href="http://courses.illinois.edu/cisapp/explorer/schedule/2012.xml" id="2012">
+     2012
+    </calendarYear>
+    <term href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall.xml" id="120128">
+     Fall 2012
+    </term>
+    <subject href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS.xml" id="AAS">
+     Asian American Studies
+    </subject>
+   </parents>
+   <label>
+    Race and Cultural Critique
+   </label>
+   <description>
+    Introduction to graduate level theoretical and methodological approaches in Comparative Race Studies. As a survey of theories of race and racism and the methodology of critique, this course offers an interdisciplinary approach that draws from anthropology, sociology, history, literature, cultural studies, and gender/sexuality studies. In addition, the study of racial and cultural formation is examined from a comparative perspective in the scholarship of racialized and Gender and Women's Studies. Same as AFRO 531, ANTH 565, GWS 561, and LLS 561.
+   </description>
+   <creditHours>
+    4 hours.
+   </creditHours>
+   <courseSectionInformation>
+    Same as AFRO 531, ANTH 565, GWS 561, and LLS 561.
+   </courseSectionInformation>
+   <detailedSections>
+    <detailedSection href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/561/58576.xml" id="58576">
+     <parents>
+      <calendarYear href="http://courses.illinois.edu/cisapp/explorer/schedule/2012.xml" id="2012">
+       2012
+      </calendarYear>
+      <term href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall.xml" id="120128">
+       Fall 2012
+      </term>
+      <subject href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS.xml" id="AAS">
+       Asian American Studies
+      </subject>
+      <course href="http://courses.illinois.edu/cisapp/explorer/schedule/2012/fall/AAS/561.xml" id="561">
+       Race and Cultural Critique
+      </course>
+     </parents>
+     <sectionNumber>
+      A
+     </sectionNumber>
+     <statusCode>
+      A
+     </statusCode>
+     <partOfTerm>
+      1
+     </partOfTerm>
+     <sectionStatusCode>
+      A
+     </sectionStatusCode>
+     <enrollmentStatus>
+      CrossListOpen
+     </enrollmentStatus>
+     <startDate>
+      2012-08-27-05:00
+     </startDate>
+     <endDate>
+      2012-12-12-06:00
+     </endDate>
+     <meetings>
+      <meeting id="0">
+       <type code="LCD">
+        lecture-discussion
+       </type>
+       <start>
+        03:00 PM
+       </start>
+       <end>
+        05:50 PM
+       </end>
+       <daysOfTheWeek>
+        T
+       </daysOfTheWeek>
+       <instructors>
+        <instructor firstName="C" lastName="Yang">
+         Yang, C
+        </instructor>
+       </instructors>
+      </meeting>
+     </meetings>
+    </detailedSection>
+   </detailedSections>
+  </cascadingCourse>
+ </cascadingCourses>
+</subject>

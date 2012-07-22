@@ -1,0 +1,24 @@
+{
+	"folders":
+	[
+		{
+			"path": "/home/mnewton/eva",
+            "folder_exclude_patterns": ["venv"],
+            "file_exclude_patterns": ["*.sublime.*"]
+		}
+	],
+    "settings":
+    {
+        "tab_size": 4
+    }
+    // ,
+    // "build_systems":
+    // [
+    //     {
+    //         "name": "Eva",
+    //         "cmd": ["ipython","-u","/home/mnewton/eva/manage.py"],
+    //         "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+    //         "selector": "source.python"
+    //     }
+    // ]
+}
