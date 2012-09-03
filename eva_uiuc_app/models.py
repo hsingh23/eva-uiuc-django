@@ -5,6 +5,10 @@ class GenEdAttribute(models.Model):
     ns2desc = models.CharField(max_length=500)
     def __unicode__(self):
         return self.ns2code
+    # def natural_key(self):
+    #     return (self.ns2code, self.ns2desc)
+    # class Meta:
+    #     unique_together = (("ns2code","ns2desc"),)
 
 class GenEdCategory(models.Model):
     category = models.CharField(max_length=5)
@@ -12,14 +16,22 @@ class GenEdCategory(models.Model):
     genEdAttribute = models.ManyToManyField(GenEdAttribute)
     def __unicode__(self):
         return self.category
+    # def natural_key(self):
+    #     return (self.category, self.description, self.genEdAttribute)
+    # class Meta:
+    #     unique_together = (("category", "description", "genEdAttribute"),)
 
 class Instructor(models.Model):
-    firstName = models.CharField(max_length=10)
-    lastName = models.CharField(max_length=100)
+    firstName = models.CharField(max_length=100, blank=True)
+    lastName = models.CharField(max_length=100, blank=True)
     rating = models.IntegerField(default=0, max_length=6)
-    course = models.CharField(max_length=100)
+    course = models.CharField(max_length=100, blank=True)
     def __unicode__(self):
         return "%s %s, %s" % (self.firstName, self.lastName, self.course)
+    # def natural_key(self):
+    #     return (self.firstName, self.lastName, self.rating, self.course)
+    # class Meta:
+    #     unique_together = (("firstName","lastName","rating","course"),)
 
 class Location(models.Model):
     buildingName = models.CharField(max_length=255, unique=True)
@@ -29,6 +41,11 @@ class Location(models.Model):
 
     def __unicode__(self):
         return self.buildingName
+
+    # def natural_key(self):
+    #     return (self.buildingName, self.address, self.lat, self.lng)
+    # class Meta:
+    #     unique_together = (("buildingName","address","lat","lng"),)
 
 class Subject(models.Model):
     sid = models.CharField(max_length=10, unique=True, db_index=True)
@@ -45,13 +62,20 @@ class Subject(models.Model):
     collegeDepartmentDescription = models.CharField(max_length=10000)
     def __unicode__(self):
         return self.label
+    # def natural_key(self):
+    #     return (self.sid, self.label, self.collegeCode, self.departmentCode, self.unitName,
+    #         self.contactName, self.contactTitle, self.addressLine1, self.addressLine2, self.phoneNumber,
+    #         self.webSiteURL, self.collegeDepartmentDescription)
+    # class Meta:
+    #     unique_together = (("sid", "label", "collegeCode", "departmentCode", "unitName", "contactName", "contactTitle",
+    #         "addressLine1", "addressLine2", "phoneNumber", "webSiteURL", "collegeDepartmentDescription"),)
+
 
 class Course(models.Model):
     subject = models.ForeignKey(Subject, to_field='id')
     label = models.CharField(max_length=500, db_index=True)
     description = models.CharField(max_length=5000)
     creditHours = models.IntegerField()
-    sectionDegreeAttributes = models.CharField(max_length=5000)
     votes = models.IntegerField(default=0)
     number = models.IntegerField(db_index=True)
     courseSectionInformation = models.CharField(max_length=5000, blank=True)
@@ -59,6 +83,16 @@ class Course(models.Model):
     classScheduleInformation = models.CharField(max_length=5000, blank=True)
     def __unicode__(self):
         return self.label
+
+    # def natural_key(self):
+    #     return (self.label, self.description, self.creditHours,
+    #         self.votes, self.number, self.courseSectionInformation,self.sectionDegreeAttributes,
+    #         self.classScheduleInformation)
+
+    # class Meta:
+    #     unique_together = (("subject", "label", "description", "creditHours",
+    #         "votes", "number", "courseSectionInformation","sectionDegreeAttributes",
+    #         "classScheduleInformation"),)
 
 class Section(models.Model):
     instructor = models.ManyToManyField(Instructor, blank=True, null=True)

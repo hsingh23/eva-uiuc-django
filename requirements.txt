@@ -12,4 +12,5 @@ lxml==2.3.4
 psycopg2==2.4.5
 pylibmc==1.2.3
 pytz==2012c
+wadofstuff-django-serializers==1.1.0
 wsgiref==0.1.2

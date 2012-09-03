@@ -1,0 +1,15 @@
+BEGIN;
+ALTER TABLE `eva_uiuc_app_section_gened` DROP FOREIGN KEY `section_id_refs_id_496a9699`;
+ALTER TABLE `eva_uiuc_app_section_instructor` DROP FOREIGN KEY `section_id_refs_id_6aa9dfc6`;
+DROP TABLE `eva_uiuc_app_section`;
+DROP TABLE `eva_uiuc_app_section_gened`;
+DROP TABLE `eva_uiuc_app_section_instructor`;
+DROP TABLE `eva_uiuc_app_course`;
+DROP TABLE `eva_uiuc_app_subject`;
+DROP TABLE `eva_uiuc_app_location`;
+DROP TABLE `eva_uiuc_app_instructor`;
+ALTER TABLE `eva_uiuc_app_genedcategory_genEdAttribute` DROP FOREIGN KEY `genedcategory_id_refs_id_93ffbaa8`;
+DROP TABLE `eva_uiuc_app_genedcategory`;
+DROP TABLE `eva_uiuc_app_genedcategory_genEdAttribute`;
+DROP TABLE `eva_uiuc_app_genedattribute`;
+COMMIT;

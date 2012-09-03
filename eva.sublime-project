@@ -2,23 +2,22 @@
 	"folders":
 	[
 		{
-			"path": "/home/mnewton/eva",
-            "folder_exclude_patterns": ["venv"],
-            "file_exclude_patterns": ["*.sublime.*"]
+			"file_exclude_patterns":
+			[
+				"*.sublime.*"
+			],
+			"folder_exclude_patterns":
+			[
+				"venv"
+			],
+			"path": "/home/mnewton/eva"
+		},
+		{
+			"path": "/home/mnewton/Desktop/stuff/eva/eva"
 		}
 	],
-    "settings":
-    {
-        "tab_size": 4
-    }
-    // ,
-    // "build_systems":
-    // [
-    //     {
-    //         "name": "Eva",
-    //         "cmd": ["ipython","-u","/home/mnewton/eva/manage.py"],
-    //         "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
-    //         "selector": "source.python"
-    //     }
-    // ]
+	"settings":
+	{
+		"tab_size": 4
+	}
 }

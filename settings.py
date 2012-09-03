@@ -179,6 +179,9 @@ CACHES = {
 }
 
 
+SERIALIZATION_MODULES = {
+    'json': 'wadofstuff.django.serializers.json'
+}
 
 # Production Server Settings
 # SURE this should be a seperate file. What about it.
