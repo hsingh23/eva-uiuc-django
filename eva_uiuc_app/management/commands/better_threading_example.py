@@ -13,7 +13,8 @@ import time
 import Queue
 import threading
 import logging
-logger = logging.getLogger(__name__)
+import json
+import urllib
 
 least_year = 2013
 base = 'http://courses.illinois.edu/cisapp/explorer/schedule.xml'
@@ -49,7 +50,6 @@ class MyOpener(FancyURLopener, object):
 
 queue = Queue.Queue()
 out_queue = Queue.Queue()
-geo_queue = Queue.Queue()
 
 def get_all_cascade_urls():
     links = []
@@ -62,7 +62,6 @@ def get_all_cascade_urls():
                 subjects = BeautifulSoup(MyOpener().open(b["href"]).read(),"xml").find_all("subject")
                 for c in subjects:
                     links.append(c["href"]+"?mode=cascade")
-    print links
     return links
 
 def get_create_subject_info(soup):
@@ -115,9 +114,15 @@ def get_create_section_info(s, course_id):
     buildingName = s.buildingName.get_text(strip=True) if s.buildingName else "Unknown"
     daysOfTheWeek = s.daysOfTheWeek.get_text(strip=True) if s.daysOfTheWeek else ""
     loc,created = Location.objects.get_or_create(buildingName=buildingName)
-    if created:
+    if created or not loc.address:
+        a = json.loads(urllib.urlopen('http://maps.google.com/maps/api/geocode/json?address='+buildingName.replace(" ","+")+',%20Urbana,%20Champaign,%20IL&sensor=false').read())
+        try:
+            loc.address = a["results"][0]["formatted_address"]
+            loc.lat = a["results"][0]["geometry"]["location"]["lat"]
+            loc.lng = a["results"][0]["geometry"]["location"]["lng"]
+        except IndexError:
+            loc.address = ""
         loc.save()
-        geo_queue.put(buildingName, loc)
 
     section,created = Section.objects.get_or_create(calendarYear=calendarYear, term=term, sectionNumber=sectionNumber,
         course_id=course_id, defaults = {"statusCode":statusCode, "partOfTerm":partOfTerm,"sectionStatusCode":sectionStatusCode,
@@ -177,32 +182,32 @@ class ThreadUrl(threading.Thread):
             #signals to queue job is done
             self.queue.task_done()
 
-class GetLocation(threading.Thread):
-    """Threaded Url Grab"""
-    def __init__(self, queue, out_queue):
-        threading.Thread.__init__(self)
-        self.queue = queue
+# class GetLocation(threading.Thread):
+#     """Threaded Url Grab"""
+#     def __init__(self, queue, out_queue):
+#         threading.Thread.__init__(self)
+#         self.queue = queue
 
-    def run(self):
-        while True:
-            host = self.queue.get()
+#     def run(self):
+#         while True:
+#             host = self.queue.get()
 
-            buildingName = host[0]
-            loc = host[1]
-            try:
-                a = json.loads(urllib.urlopen('http://maps.google.com/maps/api/geocode/json?address='+buildingName.replace(" ","+")+',%20Urbana,%20Champaign,%20IL&sensor=false').read())
-            except Exception:
-                time.sleep(randrange(1,3))
-                a = json.loads(urllib.urlopen('http://maps.google.com/maps/api/geocode/json?address='+buildingName.replace(" ","+")+',%20Urbana,%20Champaign,%20IL&sensor=false').read())
+#             buildingName = host[0]
+#             loc = host[1]
+#             try:
+#                 a = json.loads(urllib.urlopen('http://maps.google.com/maps/api/geocode/json?address='+buildingName.replace(" ","+")+',%20Urbana,%20Champaign,%20IL&sensor=false').read())
+#             except Exception:
+#                 time.sleep(randrange(1,3))
+#                 a = json.loads(urllib.urlopen('http://maps.google.com/maps/api/geocode/json?address='+buildingName.replace(" ","+")+',%20Urbana,%20Champaign,%20IL&sensor=false').read())
 
-            loc.address = a["results"][0]["formatted_address"]
-            loc.lat = a["results"][0]["geometry"]["location"]["lat"]
-            loc.lng = a["results"][0]["geometry"]["location"]["lng"]
-            loc.save()
+#             loc.address = a["results"][0]["formatted_address"]
+#             loc.lat = a["results"][0]["geometry"]["location"]["lat"]
+#             loc.lng = a["results"][0]["geometry"]["location"]["lng"]
+#             loc.save()
 
-            print "%s %s %s" %(bcolors.BGWHITEFGBLUE, "Just got location "+loc.address, bcolors.ENDC)
-            #signals to queue job is done
-            self.queue.task_done()
+#             print "%s %s %s" %(bcolors.BGWHITEFGBLUE, "Just got location "+loc.address, bcolors.ENDC)
+#             #signals to queue job is done
+#             self.queue.task_done()
 
 class DatamineThread(threading.Thread):
     """Threaded Url Grab"""
@@ -287,12 +292,6 @@ class Command(BaseCommand):
             dt.setDaemon(True)
             dt.start()
 
-        for i in range(10):
-            dt = DatamineThread(geo_queue)
-            dt.setDaemon(True)
-            dt.start()
-
         queue.join()
         out_queue.join()
-        geo_queue.join()
         print "Elapsed Time: %s" % (time.time() - start)
