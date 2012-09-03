@@ -237,14 +237,13 @@ class DatamineThread(threading.Thread):
                     courses = soup.find_all("cascadingCourse")
                     for c in courses:
                         course = get_create_course_info(c, subject.id)
-                        for g in c.genEdCategories.find_all("category"):
-                            get_create_gened_category(g)
+                        if c.genEdCategories:
+                            for g in c.genEdCategories.find_all("category"):
+                                get_create_gened_category(g)
                         sections = c.find_all("detailedSection")
-                        print "done getting section"
 
                         for s in sections:
                             section = get_create_section_info(s, course.id)
-                        print "done doing section"
 
                         instructors = s.find_all("instructor")
                         for i in instructors:
@@ -252,7 +251,6 @@ class DatamineThread(threading.Thread):
                                 instructor=get_create_teacher_info(i, course.label)
                                 section.instructor.add(instructor)
                         section.save()
-                        print "done doing instructor"
                 except Exception as e:
                     if blah:
                         print '%s Database error: %s at %s %s' %(bcolors.FAIL, e, blah, bcolors.ENDC)
