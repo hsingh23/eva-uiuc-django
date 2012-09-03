@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Find</title>
+        <meta name="description" content="Spend time wisely at UIUC" />
+        <meta name="keywords" content="eva-uiuc, eva uiuc, UIUC, EVA, time well spent, university of illinois, university of illinois at urbana champaign, find classes, scheedule, scheedule.com, explore, search, classes, class whole" />
+        <meta name="author" content="Harsh Singh, Philip Hann"/>
+        <link rel="icon" href="http://st3.herokuapp.com/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href= "http://st3.herokuapp.com/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" type="text/css" media="screen, print, projection" href= "http://st3.herokuapp.com/css/style.css" />
+        <link rel="stylesheet" type="text/css" media="screen, print, projection" href= "http://st3.herokuapp.com/nav/bst/css/nav.min.css" />
+        <link href="http://st3.herokuapp.com/bootstrap/css/docs.css" rel="stylesheet">
+
+        <script type="text/javascript" src="http://yui.yahooapis.com/3.4.1/build/yui/yui-min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+        <script type="text/javascript" src="http://st3.herokuapp.com/js/jquery.tablesorter.min.js"></script>
+        <script type="text/javascript" src="http://st3.herokuapp.com/js/vote.js"></script>
+        <script type="text/javascript" src="http://st3.herokuapp.com/js/autocomplete.js"></script>
+        <script type="text/javascript" src="http://st3.herokuapp.com/js/table.js"></script>
+        <script type="text/javascript" src="http://st3.herokuapp.com/js/jquery.tablesorter.pager.js"></script>  </head>
+    <body>
+        <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="index">Education Virtually Anywhere</a>
+            <div class="nav-collapse">
+                <ul class="nav">
+
+                    <li><a href="index">Home</a></li>
+                    <li><a href="selector">Explore</a></li>
+                    <li><a href="discover">Discover</a></li>
+                    <li><a href="find">Find</a></li>
+                    <li><a href="about">About</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+</div>      <div class="container">
+<script type="text/javascript">
+function fetch_load(){
+    // Clear previous stuff
+    $("#info").find("tr:gt(0)").remove();
+    // get new stuff
+
+
+}
+</script>
+<h2 class ="center2" >{Find}</h2>
+    <table class ="center"><tr><td><form name="find" action="#" onsubmit="fetch_load(); return false;">
+                    <input name = "punk" id="ac-input" type="text" title = "Find by Title, Code, or Teacher Name" value="" size="30"/>
+                    <label><span class="hotspot" onmouseover="tooltip.show('Find by Title (Calculus III) <br /> Find by Code (Math241)  <br /> Find by Teacher Name (Dunfield)');" onmouseout="tooltip.hide();">Find by Title, Code, or Teacher</span></label><br />
+                    <input name = "desc" id="desc" type="text" title = "Find by Course Description" value ="" size="30"/>
+                    <label><span class="hotspot" onmouseover="tooltip.show('Best to include a subject');" onmouseout="tooltip.hide();">Find by Course Discription</span></label><br />
+                    <input name="subject" id="subject" type="text" title="Find or Filter by Subject (Mathematics)" value= "" size="30" /><label> Find or Filter by Subject (Mathematics)</label><br />
+                    <input name = "stype" class="ac-input3" type="text" title = "Filter by Type (lecture)" value="" size="30"/>
+                    <label>Filter by Type (lecture)</label><br />
+                    <input type= "submit" value="I'm Feeling Lucky"  class="submit"/>
+                </form></td></tr></table><div id="pager" class="pager">
+    <form>
+        <img src="http://st3.herokuapp.com/images/first.png" class="first" alt="first"/>
+        <img src="http://st3.herokuapp.com/images/prev.png" class="prev" alt="prev"/>
+        <input type="text" class="pagedisplay" alt="pagedisplay"/>
+        <img src="http://st3.herokuapp.com/images/next.png" class="next" alt="next"/>
+        <img src="http://st3.herokuapp.com/images/last.png" class="last" alt="last"/>
+        <select class="pagesize">
+            <option  value="10">10</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+            <option  value="40">40</option>
+            <option  value="50">50</option>
+            <option selected="selected"  value="100">100</option>
+            <option  value="500">500</option>
+            <option  value="1000">1000</option>
+        </select>
+    </form>
+</div> <table class="tablesorter" id="info">
+<thead> <tr><th>Subject</th><th>Course</th><th>Teacher/s</th><th>Location</th><th>Room Number</th><th>Day</th><th>Start Time</th><th>End Time</th><th>Section Code</th><th>Rating</th></tr></thead>
+<tbody id="info">
+
+<tr><td><span class="hotspot" onmouseover="tooltip.show('<strong>Course Code: </strong> AAS 100 - Intro Asian American Studies <strong><br/> Credit Hours: </strong>3 <strong>CRN: </strong>30107<br />  <strong>Class Type: </strong>discussion- recitation <br /> Description: Interdisciplinary introduction to the basic concepts and approaches in Asian American Studies. Surveys the various dimensions of Asian American experiences including history, social organization, literature, arts, and politics.');" onmouseout="tooltip.hide();">Asian American Studies</span></td><td>Intro Asian American Studies</td>
+<td><a href="http://www.ratemyprofessors.com/SelectTeacher.jsp?the_dept=All&amp;sid=1112&amp;letter=Kinase-Leggett" target="_blank">Kinase-Leggett, E</a></td><td>David Kinley Hall</td>
+<td>room 310</td>
+<td>W</td>
+<td>2:00 pm</td>
+<td>2:50 pm</td>
+<td>AD1</td>
+<td><div class='entry'>
+<span class='vote_buttons' ID='vote_buttons1'>
+<a href='javascript:;' class='vote_up' id='1'></a>
+</span><div><span class='votes_count' ID='votes_count1'> 1 likes</span></div><span class='vote_buttons' ID='vote_buttons1'>
+<a href='javascript:;' class='vote_down' id='1'></a></span></div></td>
+</tr>
+</tbody></table>
+<script type="text/javascript" src="http://st3.herokuapp.com/js/toolztip.js"></script>
+<script type="text/javascript" src="http://st3.herokuapp.com/js/jquery.uitablefilter.js"></script>
+<script type="text/javascript" src="http://st3.herokuapp.com/js/analytics.js"></script></div>
+<br />
+</body>
+</html>

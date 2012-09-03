@@ -15,10 +15,11 @@ import threading
 import logging
 logger = logging.getLogger(__name__)
 
-least_year = 2013
+DEBUG = True
+least_year = 2011
 base = 'http://courses.illinois.edu/cisapp/explorer/schedule.xml'
 max_workers=100
-
+queue = Queue.Queue()
 user_agents = [
     'Mozilla/5.0 (Windows; U; Windows NT 5.1; it; rv:1.8.1.11) Gecko/20071127 Firefox/2.0.0.11',
     'Opera/9.25 (Windows NT 5.1; U; en)',
@@ -34,7 +35,7 @@ class bcolors:
     WARNING = '\033[93m'
     FAIL = '\033[91m'
     ENDC = '\033[0m'
-    BGWHITEFGBLUE = '\033[91m'
+
     def disable(self):
         self.HEADER = ''
         self.OKBLUE = ''
@@ -42,14 +43,14 @@ class bcolors:
         self.WARNING = ''
         self.FAIL = ''
         self.ENDC = ''
-        self.BGWHITEFGBLUE = ''
 
 class MyOpener(FancyURLopener, object):
     version = choice(user_agents)
 
+
 queue = Queue.Queue()
 out_queue = Queue.Queue()
-geo_queue = Queue.Queue()
+
 
 def get_all_cascade_urls():
     links = []
@@ -62,7 +63,6 @@ def get_all_cascade_urls():
                 subjects = BeautifulSoup(MyOpener().open(b["href"]).read(),"xml").find_all("subject")
                 for c in subjects:
                     links.append(c["href"]+"?mode=cascade")
-    print links
     return links
 
 def get_create_subject_info(soup):
@@ -117,8 +117,6 @@ def get_create_section_info(s, course_id):
     loc,created = Location.objects.get_or_create(buildingName=buildingName)
     if created:
         loc.save()
-        geo_queue.put(buildingName, loc)
-
     section,created = Section.objects.get_or_create(calendarYear=calendarYear, term=term, sectionNumber=sectionNumber,
         course_id=course_id, defaults = {"statusCode":statusCode, "partOfTerm":partOfTerm,"sectionStatusCode":sectionStatusCode,
         "enrollmentStatus":enrollmentStatus, "startDate":startDate, "endDate":endDate,
@@ -131,27 +129,12 @@ def get_create_teacher_info(i, course_label):
     firstName = i["firstName"]
     lastName = i["lastName"]
     instructor,created = Instructor.objects.get_or_create(firstName=firstName,lastName=lastName, course=course_label)
-    if created:
-        instructor.save()
+    instructor.save()
     return instructor
 
-def get_create_gened_category(c):
-    category = c["id"]
-    description = c.description.get_text(strip=True).encode("utf-8")
-    gened_category, created = GenEdCategory.objects.get_or_create(category=category, description=description)
-    if created:
-        gened_category.save()
+def get_create_gened_category(gc):
 
-    for a in c.find_all("genEdAttribute"):
-        gened_category.genEdAttribute.add(get_create_gened_attribute(a))
 
-def get_create_gened_attribute(a):
-    code = a["code"]
-    desc = a.get_text(strip=True).encode("utf-8")
-    gened_attribute,created = GenEdAttribute.objects.get_or_create(ns2code=code,ns2desc=desc)
-    if created:
-        gened_attribute.save()
-    return gened_attribute
 
 class ThreadUrl(threading.Thread):
     """Threaded Url Grab"""
@@ -174,33 +157,6 @@ class ThreadUrl(threading.Thread):
 
             self.out_queue.put(chunk)
             print "%s %s %s" %(bcolors.HEADER, host, bcolors.ENDC)
-            #signals to queue job is done
-            self.queue.task_done()
-
-class GetLocation(threading.Thread):
-    """Threaded Url Grab"""
-    def __init__(self, queue, out_queue):
-        threading.Thread.__init__(self)
-        self.queue = queue
-
-    def run(self):
-        while True:
-            host = self.queue.get()
-
-            buildingName = host[0]
-            loc = host[1]
-            try:
-                a = json.loads(urllib.urlopen('http://maps.google.com/maps/api/geocode/json?address='+buildingName.replace(" ","+")+',%20Urbana,%20Champaign,%20IL&sensor=false').read())
-            except Exception:
-                time.sleep(randrange(1,3))
-                a = json.loads(urllib.urlopen('http://maps.google.com/maps/api/geocode/json?address='+buildingName.replace(" ","+")+',%20Urbana,%20Champaign,%20IL&sensor=false').read())
-
-            loc.address = a["results"][0]["formatted_address"]
-            loc.lat = a["results"][0]["geometry"]["location"]["lat"]
-            loc.lng = a["results"][0]["geometry"]["location"]["lng"]
-            loc.save()
-
-            print "%s %s %s" %(bcolors.BGWHITEFGBLUE, "Just got location "+loc.address, bcolors.ENDC)
             #signals to queue job is done
             self.queue.task_done()
 
@@ -237,14 +193,9 @@ class DatamineThread(threading.Thread):
                     courses = soup.find_all("cascadingCourse")
                     for c in courses:
                         course = get_create_course_info(c, subject.id)
-                        for g in c.genEdCategories.find_all("category"):
-                            get_create_gened_category(g)
                         sections = c.find_all("detailedSection")
-                        print "done getting section"
-
                         for s in sections:
                             section = get_create_section_info(s, course.id)
-                        print "done doing section"
 
                         instructors = s.find_all("instructor")
                         for i in instructors:
@@ -252,8 +203,8 @@ class DatamineThread(threading.Thread):
                                 instructor=get_create_teacher_info(i, course.label)
                                 section.instructor.add(instructor)
                         section.save()
-                        print "done doing instructor"
                 except Exception as e:
+                    logger.error('Database error: %s' % e)
                     if blah:
                         print '%s Database error: %s at %s %s' %(bcolors.FAIL, e, blah, bcolors.ENDC)
                     else:
@@ -275,26 +226,42 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         # This is like main()
         start = time.time()
-        urls = get_all_cascade_urls()
-        for i in range(30):
-            t = ThreadUrl(queue, out_queue)
-            t.setDaemon(True)
-            t.start()
+        if not DEBUG:
+            urls = get_all_cascade_urls()
+            for i in range(30):
+                t = ThreadUrl(queue, out_queue)
+                t.setDaemon(True)
+                t.start()
 
-        for link in urls:
-            queue.put(link)
+            for link in urls:
+                queue.put(link)
 
-        for i in range(40):
-            dt = DatamineThread(out_queue)
-            dt.setDaemon(True)
-            dt.start()
+            for i in range(40):
+                dt = DatamineThread(out_queue)
+                dt.setDaemon(True)
+                dt.start()
 
-        for i in range(10):
-            dt = DatamineThread(geo_queue)
-            dt.setDaemon(True)
-            dt.start()
-
-        queue.join()
-        out_queue.join()
-        geo_queue.join()
+            queue.join()
+            out_queue.join()
+        else:
+            test()
         print "Elapsed Time: %s" % (time.time() - start)
+
+
+def test():
+    url = "http://courses.illinois.edu/cisapp/explorer/schedule/2011/fall/CS.xml?mode=cascade"
+    soup = BeautifulSoup(MyOpener().open(url).read(),"xml")
+    subject = get_create_subject_info(soup)
+    courses = soup.find_all("cascadingCourse")
+    for c in courses:
+        course = get_create_course_info(c, subject.id)
+        sections = c.find_all("detailedSection")
+        for s in sections:
+            section = get_create_section_info(s, course.id)
+
+        instructors = s.find_all("instructor")
+        for i in instructors:
+            if i:
+                instructor=get_create_teacher_info(i, course.label)
+                section.instructor.add(instructor)
+        section.save()
