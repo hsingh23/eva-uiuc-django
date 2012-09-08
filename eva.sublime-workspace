@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"sec",
+				"Section"
+			],
+			[
+				"loca",
+				"location"
+			],
+			[
+				"url",
+				"urllib"
+			],
+			[
+				"get_create_ge",
+				"get_create_gened_category"
+			],
+			[
+				"get",
+				"get_create_course_info"
+			],
+			[
+				"ge",
+				"get_or_create"
+			],
+			[
 				"co",
 				"counter"
 			],
@@ -30,10 +54,6 @@
 			[
 				"n",
 				"number"
-			],
-			[
-				"sec",
-				"sectionDegreeAttributes"
 			],
 			[
 				"req",
@@ -104,10 +124,6 @@
 				"course"
 			],
 			[
-				"get",
-				"get_or_create"
-			],
-			[
 				"subje",
 				"subject_id"
 			],
@@ -172,10 +188,6 @@
 				"help_app"
 			],
 			[
-				"url",
-				"urlencode"
-			],
-			[
 				"soup",
 				"SoupStrainer"
 			],
@@ -232,36 +244,11 @@
 	"buffers":
 	[
 		{
-			"file": "eva_uiuc_app/models.py",
+			"file": "eva_uiuc_app/views.py",
 			"settings":
 			{
-				"buffer_size": 5614,
+				"buffer_size": 8151,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/mnewton/sb/success_book_app/api.py",
-			"settings":
-			{
-				"buffer_size": 46830,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "urls.py",
-			"settings":
-			{
-				"buffer_size": 684,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "eva_uiuc_app/admin.py",
-			"settings":
-			{
-				"buffer_size": 350,
-				"line_ending": "Unix",
-				"name": "from django.contrib import admin"
 			}
 		},
 		{
@@ -273,150 +260,52 @@
 			}
 		},
 		{
+			"file": "eva_uiuc_app/management/commands/better_threading_example.py",
+			"settings":
+			{
+				"buffer_size": 12833,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/mnewton/Temp/math.py",
+			"settings":
+			{
+				"buffer_size": 97,
+				"line_ending": "Unix",
+				"name": "max = 100"
+			}
+		},
+		{
+			"file": "remake_db.sh",
+			"settings":
+			{
+				"buffer_size": 122,
+				"line_ending": "Unix",
+				"name": "#!/bin/bash"
+			}
+		},
+		{
+			"file": "eva_uiuc_app/models.py",
+			"settings":
+			{
+				"buffer_size": 5683,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "settings.py",
 			"settings":
 			{
-				"buffer_size": 6598,
+				"buffer_size": 6675,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/home/mnewton/help/help_app/views.py",
+			"file": "urls.py",
 			"settings":
 			{
-				"buffer_size": 7031,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/mnewton/get_json/better_jsonp/views.py",
-			"settings":
-			{
-				"buffer_size": 5093,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/mnewton/Desktop/stuff/eva/eva/CourseCode.php",
-			"settings":
-			{
-				"buffer_size": 895,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/mnewton/Desktop/stuff/eva/eva/CourseInfo.php",
-			"settings":
-			{
-				"buffer_size": 1802,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/mnewton/Desktop/stuff/eva/eva/CourseTitle.php",
-			"settings":
-			{
-				"buffer_size": 778,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "eva_uiuc_app/templates/base.html",
-			"settings":
-			{
-				"buffer_size": 530,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "eva_uiuc_app/templates/find.html",
-			"settings":
-			{
-				"buffer_size": 7113,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/mnewton/help/help_app/static/js/help_page.js",
-			"settings":
-			{
-				"buffer_size": 26122,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/mnewton/help/help_app/templates/help_page.dtl",
-			"settings":
-			{
-				"buffer_size": 4528,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "eva_uiuc_app/views.py",
-			"settings":
-			{
-				"buffer_size": 6390,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/mnewton/.xsession",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Package Control Messages\n========================\n\nSFTP:\n----\n\n  Thanks for installing Sublime SFTP! Below are some quick notes to get you\n  started with the plugin. Please see http://wbond.net/sublime_packages/sftp for\n  the full documentation.\n  \n  \n  There are two major modes of operation:\n  1. Mapping a local folder to a remote folder\n  2. Working off of a server\n  \n  \n  Mapping a Local Folder to a Remote Folder\n  ----\n  \n  To map a local folder to a remote folder, right-click on it in the side bar\n  and select the SFTP/SFTP > Map to Remote... You will enter your connection\n  parameters and a new file will be created named sftp-config.json.\n  \n  Once this file has been saved, all files in that folder and all subfolders\n  will have various operations available via the side bar context menu, editor\n  context menu and command palette.\n  \n  \n  Working off of a Server\n  ----\n  \n  To work off of a server, use the File menu and select SFTP/FTP > Setup Server...\n  You will enter your connection parameters and options then save the file with\n  the name you want to give the connection.\n  \n  Once the server config is saved, you will be automatically connected to the\n  server and you can browse and perform actions via the quick panel.\n  \n  Unfortunely due to limitations of the Sublime Text 2 API, it is not possible\n  to present the remote filesystem in the side bar. There are, however, key\n  bindings for connecting to servers to help reduce the amount of time remote\n  file operations take.\n  \n  \n  Support\n  ----\n  \n  To learn more about the features and settings, please visit\n  http://wbond.net/sublime_packages/sftp.\n  \n  If you are having trouble, please contact me at support@wbond.net. The Support\n  page, http://wbond.net/sublime_packages/sftp/support, includes instructions\n  for capturing a debug log that will be useful if you believe you are\n  experiencing a bug.\n  \n",
-			"settings":
-			{
-				"buffer_size": 1895,
-				"line_ending": "Unix",
-				"name": "Package Control Messages",
-				"scratch": true
-			}
-		},
-		{
-			"file": "eva_uiuc_app/management/commands/update.py",
-			"settings":
-			{
-				"buffer_size": 11099,
-				"line_ending": "Unix",
-				"name": "import Queue"
-			}
-		},
-		{
-			"file": "/home/mnewton/cs241/hw/0/hw1.c",
-			"settings":
-			{
-				"buffer_size": 5756,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/home/mnewton/cs/cs241/hw/0/hw1.c",
-			"settings":
-			{
-				"buffer_size": 5709,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/home/mnewton/Desktop/prob.py",
-			"settings":
-			{
-				"buffer_size": 286,
-				"line_ending": "Unix",
-				"name": "import random"
-			}
-		},
-		{
-			"file": "/home/mnewton/.bashrc",
-			"settings":
-			{
-				"buffer_size": 7981,
+				"buffer_size": 743,
 				"line_ending": "Unix"
 			}
 		}
@@ -457,6 +346,35 @@
 	},
 	"file_history":
 	[
+		"/home/mnewton/cs241/hw/0/hw1.c",
+		"/home/mnewton/cs/cs241/hw/0/hw1.c",
+		"/home/mnewton/Temp/a.c",
+		"/home/mnewton/.subversion/config",
+		"/home/mnewton/Desktop/stuff/_private.py",
+		"/home/mnewton/Desktop/stuff/eva/eva/fixlocation.php",
+		"/home/mnewton/Desktop/stuff/eva/eva/getDist2.php",
+		"/home/mnewton/eva/eva_uiuc_app/management/commands/a.xml",
+		"/home/mnewton/Desktop/stuff/eva/eva/extract.php",
+		"/home/mnewton/Desktop/stuff/eva/eva/directions.php",
+		"/home/mnewton/eva/eva_uiuc_app/management/commands/try.py",
+		"/home/mnewton/eva/settings.py",
+		"/home/mnewton/eva/urls.py",
+		"/home/mnewton/Desktop/prob.py",
+		"/home/mnewton/eva/eva_uiuc_app/management/commands/update.py",
+		"/home/mnewton/.xsession",
+		"/home/mnewton/eva/eva_uiuc_app/views.py",
+		"/home/mnewton/help/help_app/templates/help_page.dtl",
+		"/home/mnewton/help/help_app/static/js/help_page.js",
+		"/home/mnewton/eva/eva_uiuc_app/templates/find.html",
+		"/home/mnewton/eva/eva_uiuc_app/templates/base.html",
+		"/home/mnewton/Desktop/stuff/eva/eva/CourseTitle.php",
+		"/home/mnewton/Desktop/stuff/eva/eva/CourseInfo.php",
+		"/home/mnewton/Desktop/stuff/eva/eva/CourseCode.php",
+		"/home/mnewton/get_json/better_jsonp/views.py",
+		"/home/mnewton/help/help_app/views.py",
+		"/home/mnewton/eva/eva_uiuc_app/management/commands/scraper.py",
+		"/home/mnewton/eva/eva_uiuc_app/admin.py",
+		"/home/mnewton/sb/success_book_app/api.py",
 		"/home/mnewton/.bashrc",
 		"/home/mnewton/.config/pianobar/config",
 		"/home/mnewton/.xscreensaver",
@@ -474,7 +392,6 @@
 		"/home/mnewton/jsonp/better_jsonp/templates/thanks.html",
 		"/home/mnewton/jsonp/settings.py",
 		"/home/mnewton/jsonp/better_jsonp/views.py",
-		"/home/mnewton/help/help_app/templates/help_page.dtl",
 		"/home/mnewton/jsonp/better_jsonp/templates/index.html",
 		"/home/mnewton/jsonp/better_jsonp/templates/base.html",
 		"/home/mnewton/eva/manage.py",
@@ -490,7 +407,6 @@
 		"/home/mnewton/better_jsonp/urls.py",
 		"/home/mnewton/help/help_app/models.py",
 		"/home/mnewton/help/help_app/urls.py",
-		"/home/mnewton/help/help_app/views.py",
 		"/home/mnewton/help/manage.py",
 		"/home/mnewton/jsonp/better_jsonp/models.py",
 		"/home/mnewton/help/settings.py",
@@ -512,7 +428,6 @@
 		"/home/mnewton/help/help_app/templates/help_itter/help_page_2.dtl",
 		"/home/mnewton/help/urls.py",
 		"/home/mnewton/help/help_app/static/js/help_page_2.js",
-		"/home/mnewton/help/help_app/static/js/help_page.js",
 		"/home/mnewton/help/help_app/static/json/init.php",
 		"/home/mnewton/help/help_app/static/json/help_api.json",
 		"/home/mnewton/help/help_app/templates/help_maker.dlt",
@@ -539,7 +454,6 @@
 		"/home/mnewton/sb/success_book_app/static/json/init.json",
 		"/home/mnewton/sb/success_book_app/help.py",
 		"/home/mnewton/sb/templates/help_itter/help_page_1.dtl",
-		"/home/mnewton/sb/success_book_app/api.py",
 		"/home/mnewton/sb/success_book_app/static/tools/Help/help_page.js",
 		"/home/mnewton/sb/success_book_app/views.py",
 		"/home/mnewton/.mongo/members.py",
@@ -559,32 +473,7 @@
 		"/home/mnewton/sb/success_book_app/static/css/skin2.css",
 		"/home/mnewton/sb/success_book_app/models.py",
 		"/home/mnewton/sb/templates/slidedeck-test.html",
-		"/home/mnewton/sb/templates/index.dtl",
-		"/home/mnewton/sb/templates/test_form.dtl",
-		"/home/mnewton/sb/templates/login.dtl",
-		"/home/mnewton/lalal",
-		"/media/PENDRIVE/autorun.inf",
-		"/home/mnewton/sb/autocomplete.js",
-		"/home/mnewton/sb/.hgignore",
-		"/home/mnewton/sb/venv/lib/python2.7/site-packages/django/contrib/admin/templates/admin/index.html",
-		"/home/mnewton/sb/.hg/hgrc",
-		"/home/mnewton/.hgrc",
-		"/home/mnewton/sb/_private.conf",
-		"/home/mnewton/sb/success_book_app/roster.log",
-		"/home/mnewton/.config/sublime-text-2/Packages/SFTP/license.txt",
-		"/home/mnewton/.config/sublime-text-2/Packages/SFTP/sftp/views.pyc",
-		"/home/mnewton/.config/sublime-text-2/Packages/SFTP/SFTP.py",
-		"/home/mnewton/.config/sublime-text-2/Packages/SFTP/SFTP.default-config",
-		"/home/mnewton/.config/sublime-text-2/Packages/SFTP/SFTP.sublime-settings",
-		"/home/mnewton/.config/sublime-text-2/Packages/SFTP/python_license.txt",
-		"/home/mnewton/.config/sublime-text-2/Packages/SFTP/package-metadata.json",
-		"/home/mnewton/sb/os.path",
-		"/home/mnewton/sb/a.sql",
-		"/home/mnewton/sb/sftp-config.json",
-		"/home/mnewton/sb/requirements.txt",
-		"/home/mnewton/sb/templates/ti_user.html",
-		"/home/mnewton/sb/templates/ti_result.html",
-		"/home/mnewton/sb/templates/ti_group.html"
+		"/home/mnewton/sb/templates/index.dtl"
 	],
 	"find":
 	{
@@ -603,6 +492,19 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"malloc",
+			"__get",
+			"geo",
+			"print",
+			"location",
+			"fail",
+			"\"href\"",
+			"self",
+			"a",
+			"self",
+			"\\n",
+			"    ",
+			" = .*",
 			"src=\"/",
 			",",
 			"\"",
@@ -694,9 +596,17 @@
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": true,
+		"regex": false,
 		"replace_history":
 		[
+			"a.course.subject",
+			"a.course",
+			"a.instructor",
+			"a.location",
+			"a",
+			", ",
+			"a.",
+			"",
 			"src=\"http://st3.herokuapp.com/",
 			", ",
 			"",
@@ -754,23 +664,23 @@
 	"groups":
 	[
 		{
-			"selected": 22,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "eva_uiuc_app/models.py",
+					"file": "eva_uiuc_app/views.py",
 					"settings":
 					{
-						"buffer_size": 5614,
+						"buffer_size": 8151,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5614,
-								5614
+								0,
+								0
 							]
 						],
 						"settings":
@@ -783,104 +693,13 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1581.0,
+						"translation.y": 2322.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "/home/mnewton/sb/success_book_app/api.py",
-					"settings":
-					{
-						"buffer_size": 46830,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								415,
-								415
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 66.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "urls.py",
-					"settings":
-					{
-						"buffer_size": 684,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								621,
-								621
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "eva_uiuc_app/admin.py",
-					"settings":
-					{
-						"buffer_size": 350,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								315,
-								315
-							]
-						],
-						"settings":
-						{
-							"auto_name": "from django.contrib import admin",
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
 					"file": "eva_uiuc_app/management/commands/scraper.py",
 					"settings":
 					{
@@ -891,189 +710,6 @@
 						"selection":
 						[
 							[
-								1903,
-								1903
-							]
-						],
-						"settings":
-						{
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1620.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "settings.py",
-					"settings":
-					{
-						"buffer_size": 6598,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4175,
-								4175
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1088.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "/home/mnewton/help/help_app/views.py",
-					"settings":
-					{
-						"buffer_size": 7031,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								405,
-								405
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "/home/mnewton/get_json/better_jsonp/views.py",
-					"settings":
-					{
-						"buffer_size": 5093,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								161,
-								161
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "/home/mnewton/Desktop/stuff/eva/eva/CourseCode.php",
-					"settings":
-					{
-						"buffer_size": 895,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								895,
-								895
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "/home/mnewton/Desktop/stuff/eva/eva/CourseInfo.php",
-					"settings":
-					{
-						"buffer_size": 1802,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1680,
-								1680
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "/home/mnewton/Desktop/stuff/eva/eva/CourseTitle.php",
-					"settings":
-					{
-						"buffer_size": 778,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
 								0,
 								0
 							]
@@ -1083,38 +719,8 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "eva_uiuc_app/templates/base.html",
-					"settings":
-					{
-						"buffer_size": 530,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage",
-							"tab_size": 2,
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -1124,111 +730,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 12,
-					"file": "eva_uiuc_app/templates/find.html",
+					"buffer": 2,
+					"file": "eva_uiuc_app/management/commands/better_threading_example.py",
 					"settings":
 					{
-						"buffer_size": 7113,
+						"buffer_size": 12833,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6847,
-								6847
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2237.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "/home/mnewton/help/help_app/static/js/help_page.js",
-					"settings":
-					{
-						"buffer_size": 26122,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								7648,
-								7648
-							]
-						],
-						"settings":
-						{
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2142.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "/home/mnewton/help/help_app/templates/help_page.dtl",
-					"settings":
-					{
-						"buffer_size": 4528,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								86,
-								86
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 51.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "eva_uiuc_app/views.py",
-					"settings":
-					{
-						"buffer_size": 6390,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								344,
-								344
+								5796,
+								5796
 							]
 						],
 						"settings":
@@ -1241,181 +755,30 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 4914.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 16,
-					"file": "/home/mnewton/.xsession",
+					"buffer": 3,
+					"file": "/home/mnewton/Temp/math.py",
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 97,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								53,
+								53
 							]
 						],
 						"settings":
 						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 17,
-					"settings":
-					{
-						"buffer_size": 1895,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1895,
-								1895
-							]
-						],
-						"settings":
-						{
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true,
-							"word_wrap": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 18,
-					"file": "eva_uiuc_app/management/commands/update.py",
-					"settings":
-					{
-						"buffer_size": 11099,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								69,
-								69
-							]
-						],
-						"settings":
-						{
-							"auto_name": "import Queue",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 153.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 19,
-					"file": "/home/mnewton/cs241/hw/0/hw1.c",
-					"settings":
-					{
-						"buffer_size": 5756,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1292,
-								1292
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/C++/C.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 629.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 20,
-					"file": "/home/mnewton/cs/cs241/hw/0/hw1.c",
-					"settings":
-					{
-						"buffer_size": 5709,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1076,
-								1076
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/C++/C.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 306.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 21,
-					"file": "/home/mnewton/Desktop/prob.py",
-					"settings":
-					{
-						"buffer_size": 286,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								178,
-								178
-							]
-						],
-						"settings":
-						{
-							"auto_name": "import random",
+							"auto_name": "max = 100",
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
@@ -1428,50 +791,55 @@
 					"type": "text"
 				},
 				{
-					"buffer": 22,
-					"file": "/home/mnewton/.bashrc",
+					"buffer": 4,
+					"file": "remake_db.sh",
 					"settings":
 					{
-						"buffer_size": 7981,
+						"buffer_size": 122,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6933,
-								6933
+								96,
+								96
 							]
 						],
 						"settings":
 						{
+							"auto_name": "#!/bin/bash",
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2865.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
 				{
-					"buffer": 2,
-					"file": "urls.py",
+					"buffer": 5,
+					"file": "eva_uiuc_app/models.py",
 					"settings":
 					{
-						"buffer_size": 684,
+						"buffer_size": 5683,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								220,
-								220
+								5287,
+								5287
 							]
 						],
 						"settings":
@@ -1479,7 +847,9 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1488,19 +858,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "settings.py",
 					"settings":
 					{
-						"buffer_size": 6598,
+						"buffer_size": 6675,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6218,
-								6218
+								6122,
+								6122
 							]
 						],
 						"settings":
@@ -1513,7 +883,38 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2747.0,
+						"translation.y": 3191.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "urls.py",
+					"settings":
+					{
+						"buffer_size": 743,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								597,
+								597
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1538,11 +939,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.653733528551,
 			1.0
 		],
 		"rows":
@@ -1554,7 +962,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 267.0
+		"height": 405.0
 	},
 	"output.sftp":
 	{
@@ -1571,6 +979,26 @@
 		"selected_items":
 		[
 			[
+				"comma",
+				"eva/eva_uiuc_app/management/commands/try.py"
+			],
+			[
+				"scr",
+				"eva/eva_uiuc_app/management/commands/scraper.py"
+			],
+			[
+				"vi",
+				"eva/eva_uiuc_app/views.py"
+			],
+			[
+				"ur",
+				"eva/urls.py"
+			],
+			[
+				"se",
+				"eva/settings.py"
+			],
+			[
 				"base",
 				"eva/eva_uiuc_app/templates/base.html"
 			],
@@ -1579,16 +1007,8 @@
 				"eva/CourseTitle.php"
 			],
 			[
-				"ur",
-				"eva/urls.py"
-			],
-			[
 				"sett",
 				"eva/settings.py"
-			],
-			[
-				"vi",
-				"eva/eva_uiuc_app/views.py"
 			],
 			[
 				"urls",
@@ -1597,10 +1017,6 @@
 			[
 				"sc",
 				"eva_uiuc_app/management/commands/scraper.py"
-			],
-			[
-				"se",
-				"settings.py"
 			],
 			[
 				"mod",

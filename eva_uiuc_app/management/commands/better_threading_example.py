@@ -16,7 +16,7 @@ import logging
 import json
 import urllib
 
-least_year = 2013
+least_year = 2012
 base = 'http://courses.illinois.edu/cisapp/explorer/schedule.xml'
 max_workers=100
 
@@ -83,7 +83,8 @@ def get_create_subject_info(soup):
      unitName=unitName, defaults={"departmentCode":departmentCode, "contactName":contactName,
      "contactTitle":contactTitle, "addressLine1":addressLine1, "addressLine2":addressLine2,
      "phoneNumber":phoneNumber, "webSiteURL":webSiteURL, "collegeDepartmentDescription":collegeDepartmentDescription})
-    s.save()
+    if created:
+        s.save()
     return s
 
 def get_create_course_info(c, subject_id):
@@ -96,7 +97,8 @@ def get_create_course_info(c, subject_id):
     defaults={"creditHours":creditHours,
      "sectionDegreeAttributes":sectionDegreeAttributes,
      "description":description} )
-    course.save()
+    if a:
+        course.save()
     return course
 
 def get_create_section_info(s, course_id):
@@ -249,23 +251,21 @@ class DatamineThread(threading.Thread):
 
                         for s in sections:
                             section = get_create_section_info(s, course.id)
-
-                        instructors = s.find_all("instructor")
-                        for i in instructors:
-                            if i:
-                                instructor=get_create_teacher_info(i, course.label)
-                                section.instructor.add(instructor)
-                        section.save()
+                            instructors = s.find_all("instructor")
+                            for i in instructors:
+                                if i:
+                                    instructor=get_create_teacher_info(i, course.label)
+                                    section.instructor.add(instructor)
+                            section.save()
                 except Exception as e:
                     if blah:
                         print '%s Database error: %s at %s %s' %(bcolors.FAIL, e, blah, bcolors.ENDC)
                     else:
                         print '%s Database error: %s %s' %(bcolors.FAIL, e, bcolors.ENDC)
 
-
                 #signals to queue job is done
                 try:
-                    print "%s DONE working on %s %s"  %(bcolors.OKGREEN, blah, bcolors.ENDC)
+                    print "%s DONE working on %s %s"  %(bcolors.BGWHITEFGBLUE, blah, bcolors.ENDC)
                 except:
                     pass
                 self.out_queue.task_done()
