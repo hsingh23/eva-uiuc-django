@@ -191,9 +191,18 @@ try:
         TEMPLATE_DEBUG = False
         STATIC_URL = 'http://statics.site50.net/'
         STATIC_ROOT = ''
-        import dj_database_url
-        DATABASES = {'default': dj_database_url.config(default='postgres://localhost')}
-
+        # import dj_database_url
+        # DATABASES = {'default': dj_database_url.config(default='postgres://localhost')}
+        DATABASES = {
+            'default': {
+                'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
+                'NAME': 'bephus_eva-uiuc',                      # Or path to database file if using sqlite3.
+                'USER': 'bephus_evauiuc',                      # Not used with sqlite3.
+                'PASSWORD': 'G$En1E4Vgv@TG$En1E4Vgv@T',                  # Not used with sqlite3.
+                'HOST': 'tmcginniss.com',                      # Set to empty string for localhost. Not used with sqlite3.
+                'PORT': '3306',                      # Set to empty string for default. Not used with sqlite3.
+            }
+        }
         from memcacheify import memcacheify
         CACHES = memcacheify()
 except:

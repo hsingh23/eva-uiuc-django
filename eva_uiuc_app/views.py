@@ -9,6 +9,7 @@ import re
 import os
 from django.core import serializers
 PRODUCTION = "PRODUCTION" in os.environ and os.environ['PRODUCTION'] == 'True'
+POSTGRES = False
 
 def find(request):
     pass
@@ -27,19 +28,28 @@ def test_a(request):
     if "q" in get:
         # escape this shit
         course = str(get["q"])
-        a = [{"section":[a.id, a.sectionNumber, a.statusCode, a.partOfTerm, a.term,
-        a.sectionStatusCode, a.enrollmentStatus, str(a.startDate), str(a.endDate), str(a.calendarYear),
-        a.code, a.section_type, a.roomNumber, a.daysOfTheWeek],
-        # "Instructor":[a.instructor.firstName, a.instructor.lastName, a.instructor.rating],
-        "Location": [a.location.buildingName, a.location.address, a.location.lat, a.location.lng],
-        "course":[a.course.label, a.course.description, a.course.creditHours, a.course.votes, a.course.number,
-        a.course.courseSectionInformation,a.course.sectionDegreeAttributes, a.course.classScheduleInformation],
-        "subject":[a.course.subject.sid, a.course.subject.label, a.course.subject.collegeCode,
-        a.course.subject.departmentCode, a.course.subject.unitName, a.course.subject.contactName,
-        a.course.subject.contactTitle, a.course.subject.addressLine1, a.course.subject.addressLine2,
-        a.course.subject.phoneNumber, a.course.subject.webSiteURL, a.course.subject.collegeDepartmentDescription]} for a in Section.objects.filter(course__label__icontains=course)[:1]]
+        a = [get_everything_interesting(a) for a in Section.objects.filter(course__label__icontains=course, term="Fall 2012")[:10]]
         return HttpResponse(json.dumps(a))
     return HttpResponse(status=404)
+
+def get_everything_interesting(a):
+    result = {}
+    result["section"] = [a.id, a.sectionNumber, a.statusCode, a.partOfTerm, a.term,
+        a.sectionStatusCode, a.enrollmentStatus, str(a.startDate), str(a.endDate), str(a.calendarYear),
+        a.code, a.section_type, a.roomNumber, a.daysOfTheWeek]
+    try:
+        result["instructor"] = [a.instructor.firstName, a.instructor.lastName, a.instructor.rating]
+    except AttributeError:
+        result["instructor"] = ["Unknown"]
+    try:
+        result["location"] = [a.location.buildingName, a.location.address, str(a.location.lat), str(a.location.lng)]
+    except AttributeError:
+        # TODO: Make this better
+        result["location"] = ["Unknown"]
+    result["subject"] = [a.course.subject.sid, a.course.subject.label]
+    result["course"] = [a.course.label, a.course.description, a.course.creditHours, a.course.votes, a.course.number,
+        a.course.courseSectionInformation,a.course.sectionDegreeAttributes, a.course.classScheduleInformation]
+    return result
 
 
 
@@ -74,7 +84,7 @@ def course_info(request):
         result = {}
         q = str(request.GET["q"]).replace("\'","").replace("\"","")
         result["course_codes"]=course_code_helper(q,5)
-        if PRODUCTION:
+        if POSTGRES:
             result["course_titles"]=[a.label for a in Course.objects.filter(label__icontains=q).distinct('label')[:10]]
             result["teachers"]=[{"name":str(a.lastName)+", "+(a.firstName),"course":(a.course)} for a in Instructor.objects.filter(lastName__icontains=q).order_by("lastName")[:10]]
 
