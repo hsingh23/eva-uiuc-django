@@ -199,7 +199,7 @@ try:
                 'NAME': 'bephus_eva-uiuc',                      # Or path to database file if using sqlite3.
                 'USER': 'bephus_evauiuc',                      # Not used with sqlite3.
                 'PASSWORD': 'G$En1E4Vgv@TG$En1E4Vgv@T',                  # Not used with sqlite3.
-                'HOST': 'tmcginniss.com',                      # Set to empty string for localhost. Not used with sqlite3.
+                'HOST': '199.188.200.14',                      # Set to empty string for localhost. Not used with sqlite3.
                 'PORT': '3306',                      # Set to empty string for default. Not used with sqlite3.
             }
         }
